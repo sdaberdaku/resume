@@ -4,6 +4,7 @@ Sebastian Daberdaku, Ph.D.
 
 |[resume.html](https://sebastiandaberdaku.github.io/resume/resume.html) | [resume.pdf](https://sebastiandaberdaku.github.io/resume/resume.pdf) | [resume.docx](https://sebastiandaberdaku.github.io/resume/resume.docx) | [resume.rtf](https://sebastiandaberdaku.github.io/resume/resume.rtf) |
 | :---: | :---: | :---: | :---: |
+
 ---
 
 - `email`:        [sebastiandaberdaku@gmail.com](mailto:sebastiandaberdaku@gmail.com)
