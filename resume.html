@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  /* h1:hover { */
+  /*     background-color: #757575; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #9CB770;
+  }
+  /* h2:hover { */
+  /*     background-color: #397249; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      font-weight: bold;
+  }
+  dd {
+      margin-left: 17%;
+      margin-bottom:7px;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #397249;
+  }
+  a:hover, a:active {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+
+  table {
+      width: 100%;
+  }
+  </style>
+</head>
+<body>
+<h1 id="sebastian-daberdaku-ph.d.">Sebastian Daberdaku, Ph.D.</h1>
+<ul>
+<li><code>email</code>: <a href="mailto:sebastiandaberdaku@gmail.com">sebastiandaberdaku@gmail.com</a></li>
+<li><code>phone</code>: (+39) 320 6748036</li>
+<li><code>portfolio</code>: <a href="https://github.com/sebastiandaberdaku" target="_blank">GitHub</a></li>
+<li><code>publications</code>: <a href="https://scholar.google.com/citations?user=XpyjCaUAAAAJ" target="_blank">Google Scholar</a></li>
+<li><code>LinkedIn</code>: <a href="https://www.linkedin.com/in/sebastian-daberdaku/" target="_blank">profile</a></li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>With over 5 years of experience as a data engineer and a PhD in Information Engineering, I specialize in crafting efficient, scalable, and resilient data pipelines. Proficient in technologies like Spark, Airflow, Python, DataBricks, TrinoDB, and AWS, I’ve worked across diverse domains including bioinformatics, clinical informatics, and finance. My research and data science background ensure a rigorous problem-solving approach. Additionally, I possess backend development expertise in Python and Java (Spring Boot). Demonstrating leadership in various projects, I excel in project management and collaboration. I am committed to ongoing learning and stayuing updated with the latest advancements in data engineering to drive impactful insights.</p>
+<h2 id="experience">Experience</h2>
+<h3 id="aug-2023-present-data-engineering-tech-lead-cardo-ai"><span>Aug 2023 – present</span> <span>Data Engineering Tech Lead @ Cardo AI</span></h3>
+<ul>
+<li>Implemented fully-automated deployments of Apache Airflow and Databricks environments with Terraform modules and ArgoCD for various teams in the company, guaranteeing data separation and detailed cost allocation.</li>
+<li>Developed a Helm Chart for Spark Connect server, which can be used concurrently by multiple Apache Spark applications, effectively optimising infrastructure costs and improving the overall developer experience.</li>
+<li>Ensured that the Data Engineering team followed best practices and maintained high-quality code and data pipelines.</li>
+</ul>
+<h3 id="sep-2022-jul-2023-senior-data-engineer-cardo-ai"><span>Sep 2022 – Jul 2023</span> <span>Senior Data Engineer @ Cardo AI</span></h3>
+<ul>
+<li>Refactored the whole Cardo AI Data Engineering infrastructure on the AWS cloud. Implemented a multi-environment setup with automated CI/CD and IaC principles.</li>
+<li>Developed several Terraform modules for providing complex services to our stakeholders. <strong>Tech stack</strong>: AWS, K8s (EKS, Karpenter, Helm Chart, ArgoCD, Vault) TerraformHub Actions.</li>
+<li>Developed an <strong>on-demand big data processing</strong> solution with Airflow – Spark – Delta Lake – K8s – Trino, released as an <a href="https://github.com/sebastiandaberdaku/apache-airflow-providers-pysparkonk8s" target="_blank">Apache Airflow provider package</a>. <strong>Tech stack</strong>: K8s, Apache Airflow, Apache Spark, Delta Lake, AWS Glue (as meta-store), and Karpenter.</li>
+<li>Developed and maintained several <strong>ETL pipelines</strong> with Apache Airflow and Databricks. <strong>Tech stack</strong>: Python, Apache Airflow, Databricks, Apache Spark (PySpark), Delta Lake.</li>
+</ul>
+<h3 id="may-2020-aug-2022-senior-data-scientist-engineer-sorint.tek"><span>May 2020 – Aug 2022</span> <span>Senior Data Scientist &amp; Engineer @ Sorint.Tek</span></h3>
+<ul>
+<li><strong>AWS Data Architect</strong> for the Data Engineering team at InfoCert S.p.A where I developed and improved automated data ingestion processes. <strong>Tech stack</strong>: AWS Infrastructure (CloudFormation), CI/CD, Lambda, RedShift, Kinesis, Glue, RDS, S3, Python, fluentbit.</li>
+<li><strong>Baggage Carousel Assignment</strong> at the Milan Bergamo Airport. Developed an automatic scheduling algorithm for the optimal assignment of flights to baggage belts in the baggage reclaim area of the airport, Client: SACBO S.p.A. <strong>Tech stack</strong>: Python (OR-Tools, SQLAlchemy), Oracle, Docker.</li>
+<li><strong>SNIPE</strong> (Sensor Network for Intelligent Predictive Enterprise). Developed an AI enabled IoT system for machinery revamping in foundries to monitor performance and enable predictive maintenance based on <a href="https://www.mangroviaiot.com/" target="_blank">MangroviaIoT</a>, Client: FAE Technology S.p.A. <strong>Tech stack</strong>: Python (scikit-learn), TimescaleDB.</li>
+<li><strong>ELK SEA</strong>. Developed an analytics platform for anomaly detection and monitoring on the WiFi networks of the Linate and Malpensa airports (Milan, IT), Client: SEA SpA. <strong>Tech stack</strong>: Elasticsearch, Kibana, Logstash, RabbitMQ, Cisco Prime, Python (requests), bash.</li>
+<li><strong>ELK ML OpenShift</strong>. Developed machine learning models for microservice anomaly detection and root-cause analysis on an OpenShift cluster, Client: Intesa Sanpaolo Group Services S.C.p.A. <strong>Tech stack</strong>: Elasticsearch, Kibana.</li>
+<li><strong>2Vita-B</strong>. Developed deep-learning models for stress and affect detection from wearable sensor data, Client: Atlantica Digital S.p.A. <strong>Tech stack</strong>: Python, Keras Tensorflow (CNN), scikit-learn, AWS SageMaker.</li>
+<li><strong>Tech Lead</strong> for <a href="https://developers.infocert.digital/safe-lta/" target="_blank"><strong>Safe LTA</strong></a>, a cloud-based long-term repository of digital documents, Client: InfoCert S.p.A. <strong>Tech stack</strong>: Java (Spring Boot), Docker, ElasticSearch, Amazon S3, Kong API Gateway, Keycloak, RabbitMQ, SQS, Elastic Kubernetes Service, AWS Architecture (CloudFormation).</li>
+</ul>
+<h3 id="jan-2016-apr-2020-postdoctoral-researcher-university-of-padua"><span>Jan 2016 – Apr 2020</span> <span>Postdoctoral Researcher @ University of Padua</span></h3>
+<ul>
+<li><strong>Data Mining from environmental, genetic and clinical variables in ALS</strong>, Dept. of Information Engineering.
+<ul>
+<li>ALS prognosis prediction with machine learning and data mining methods. <strong>Tech stack</strong>: R (bnstruct), R-Shiny, Dynamic Bayesian Networks.</li>
+<li>Missing data imputation for static and dynamic mixed-type clinical data. <strong>Tech stack</strong>: R (e1071, caret, infotheo).</li>
+<li>Metagenomics diagnosis for Inflammatory Bowel Disease. <strong>Tech stack</strong>: R, SVM, Randomised Logistic Regression.</li>
+</ul></li>
+<li><strong>Evolutionary-based approach for predicting protein interaction sites and residue mutation impact</strong>, Dept. of Comparative Biomedicine and Food Science.
+<ul>
+<li>Single-point-mutation effect prediction on metabolic networks with flux balance analysis and machine learning methods. <strong>Tech stack</strong>: Python.</li>
+</ul></li>
+<li><strong>Models and algorithms for protein–protein docking</strong>, Dept. of Information Engineering.
+<ul>
+<li>Protein interface prediction with machine learning methods. <strong>Tech stack</strong>: C++, Python (scikit-learn).</li>
+<li>Protein surface representation for the docking problem. <strong>Tech stack</strong>: C++ (boost, MPI, Open-MP).</li>
+<li>Parallel computation of molecular surfaces with MPI/OpenMP. <strong>Tech stack</strong>: C++ (boost, MPI, Open-MP).</li>
+<li>Protein pocket and cavity identification. <strong>Tech stack</strong>: C++, Python.</li>
+</ul></li>
+</ul>
+<h3 id="jan-2013-apr-2020-lecturer-university-of-padua"><span>Jan 2013 – Apr 2020</span> <span>Lecturer @ University of Padua</span></h3>
+<ul>
+<li><em>Computer Engineering Laboratory</em> course (C programming), B.Sc. in Information Engineering.</li>
+<li><em>Foundation of Mathematical Analysis and Probability</em> course (tutoring), B.Sc. in Biomedical Engineering.</li>
+<li><em>Probability and Statistics</em> course (tutoring), B.Sc. in Mathematics.</li>
+<li><em>Embedded Systems Programming</em> course (tutoring), M.Sc. in Computer Engineering.</li>
+</ul>
+<h2 id="professional-qualifications">Professional Qualifications</h2>
+<ul>
+<li><em>11/01/2024</em> <a href="https://www.credly.com/badges/184f3897-c798-4494-b67c-10952a2fa147" target="_blank">Astronomer Certification for Apache Airflow Fundamentals</a></li>
+<li><em>29/11/2021</em> <a href="https://www.credly.com/badges/ce36cfb1-e1d5-49fb-9b17-1716044a1aab" target="_blank">AWS Certified Solutions Architect – Associate</a></li>
+<li><em>19/07/2021</em> <a href="https://certified.elastic.co/48983e79-cd04-42a9-bc27-de286efd2e45" target="_blank">Elastic Certified Analyst</a></li>
+<li><em>21/01/2013</em> License to practice the profession of <em>Information Engineer</em>, University of Padua</li>
+</ul>
+<h2 id="education">Education</h2>
+<h3 id="doctor-of-philosophy"><span>2013 – 2016</span> <span>Doctor of Philosophy</span></h3>
+<ul>
+<li>Information Engineering, University of Padua</li>
+<li>Thesis title: <em>Protein contour modelling and computation for complementarity detection and docking</em>.</li>
+</ul>
+<h3 id="masters-degree"><span>2010 – 2012</span> <span>Master’s degree</span></h3>
+<ul>
+<li>Computer Engineering, University of Padua</li>
+<li>110/110 <em>cum laude</em></li>
+<li>Thesis title: <em>DHT-based task allocation in Volunteer Computing</em>.</li>
+</ul>
+<h3 id="bachelors-degree"><span>2007 – 2010</span> <span>Bachelor’s degree</span></h3>
+<ul>
+<li>Computer Engineering, University of Padua</li>
+<li>110/110 <em>cum laude</em></li>
+<li>Thesis title: <em>PariMulo: Credits</em>.</li>
+</ul>
+<h2 id="awards-and-achievements">Awards and Achievements</h2>
+<ul>
+<li><em>13/07/2020</em> Winner (Team GiGi) of the <a href="ttps://www.intervals.science/resources/sbv-improver/medic">“Metagenomics Diagnosis for IBD Challenge” (MEDIC)</a>.</li>
+<li><em>21/11/2018</em> Winner of the PeerJ Award for the <a href="https://peerj.com/blog/post/115284881098/congratulations-to-the-first-round-of-peerj-award-winners" target="_blank">“Best Contribution by an Early Career Researcher” @ BBCC2018</a> for the paper “Identification of protein pockets and cavities by Euclidean Distance Transform”.</li>
+<li><em>2013 – 2016</em> Full Ph.D. scholarship, University of Padua.</li>
+</ul>
+<h2 id="personal-data">Personal Data</h2>
+<p>I hereby authorize the use of my personal data in accordance with GDPR 2016/679 (General Data Protection Regulation).</p>
+<hr />
+<h4 id="march-5th-2024">March 5th, 2024</h4>
+</body>
+</html>
