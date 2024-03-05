@@ -1,4 +1,4 @@
-name: Build and Deploy Resume
+name: GitHub Pages
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-22.04
     permissions:
       contents: write
