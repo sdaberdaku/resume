@@ -33,7 +33,7 @@ To generate various output formats (HTML, PDF, RTF, DOCX), follow these steps:
 ## Deploying to GitHub Pages
 This repository is configured to automatically deploy the generated output files to GitHub Pages.
 
-To access your resume online: [https://sebastiandaberdakugithub.io/resume/](https://sebastiandaberdakugithub.io/resume/)
+To access the resume online visit: [https://sebastiandaberdaku.github.io/resume](https://sebastiandaberdaku.github.io/resume)
 
 ## Customization
 Feel free to customize this repository to suit your needs. You can modify the Markdown template in resume.md, customize the output formats in the Makefile, or adjust the GitHub Actions workflow in `.github/workflows/build-resume.yaml`.

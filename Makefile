@@ -15,7 +15,8 @@ html: init
 		--to html \
 		--output ${OUT_DIR}/${BASE_FILENAME}.html \
 		--metadata pagetitle=${BASE_FILENAME} \
-		${IN_FILE}
+		${IN_FILE}; \
+	cp ${OUT_DIR}/${BASE_FILENAME}.html ${OUT_DIR}/index.html
 
 pdf: init
 	pandoc \
@@ -29,7 +30,11 @@ pdf: init
 	mtxrun \
 		--path=${OUT_DIR} \
 		--result=${BASE_FILENAME}.pdf \
-		--script context ${BASE_FILENAME}.tex > ${OUT_DIR}/context_${BASE_FILENAME}.log 2>&1
+		--script context ${BASE_FILENAME}.tex > ${OUT_DIR}/context_${BASE_FILENAME}.log 2>&1;
+	rm ${OUT_DIR}/context_${BASE_FILENAME}.log; \
+	rm ${OUT_DIR}/${BASE_FILENAME}.log; \
+	rm ${OUT_DIR}/${BASE_FILENAME}.tex; \
+	rm ${OUT_DIR}/${BASE_FILENAME}.tuc
 
 docx: init
 	pandoc \

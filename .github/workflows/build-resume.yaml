@@ -25,11 +25,7 @@ jobs:
         sudo apt install -y pandoc context
 
     - name: Build resume
-      run: |
-        make all
-        rm ./output/*.log
-        rm ./output/*.tex
-        rm ./output/*.tuc
+      run: make all
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3.9.3

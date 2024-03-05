@@ -1,5 +1,10 @@
 Sebastian Daberdaku, Ph.D.
 ==========================
+---
+
+|[resume.html](https://sebastiandaberdaku.github.io/resume/resume.html) | [resume.pdf](https://sebastiandaberdaku.github.io/resume/resume.pdf) | [resume.docx](https://sebastiandaberdaku.github.io/resume/resume.docx) | [resume.rtf](https://sebastiandaberdaku.github.io/resume/resume.rtf) |
+| :---: | :---: | :---: | :---: |
+---
 
 - `email`:        [sebastiandaberdaku@gmail.com](mailto:sebastiandaberdaku@gmail.com)
 - `phone`:        (+39) 320 6748036
@@ -86,4 +91,4 @@ Personal Data
 I hereby authorize the use of my personal data in accordance with GDPR 2016/679 (General Data Protection Regulation).
 
 ---
-#### March 5th, 2024
+#### March 6th, 2024
