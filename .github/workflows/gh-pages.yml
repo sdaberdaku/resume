@@ -1,11 +1,13 @@
-name: GitHub Pages
-
+# Simple workflow for building the resume in different formats and deploying them to GitHub Pages
+name: Build and deploy the resume to GitHub Pages
 on:
+  # Runs on pushes targeting resume.md on the default branch
   push:
     branches:
       - main
     paths:
       - 'resume.md'
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -17,7 +19,7 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Install pandoc and context
       run: |
