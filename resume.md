@@ -2,7 +2,7 @@ Sebastian Daberdaku, Ph.D.
 ==========================
 ---
 
-|[html](https://sebastiandaberdaku.github.io/resume/resume.html) | [pdf](https://sebastiandaberdaku.github.io/resume/resume.pdf) | [docx](https://sebastiandaberdaku.github.io/resume/resume.docx) | [rtf](https://sebastiandaberdaku.github.io/resume/resume.rtf) |
+|[resume.html](https://sebastiandaberdaku.github.io/resume/resume.html) | [resume.pdf](https://sebastiandaberdaku.github.io/resume/resume.pdf) | [resume.docx](https://sebastiandaberdaku.github.io/resume/resume.docx) | [resume.rtf](https://sebastiandaberdaku.github.io/resume/resume.rtf) |
 | :---: | :---: | :---: | :---: |
 
 ---
