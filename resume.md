@@ -3,8 +3,8 @@ Sebastian Daberdaku, Ph.D.
 
 ---
 
-| [email](mailto:sebastiandaberdaku@gmail.com) | [phone](tel:+393206748036) | [portfolio](https://github.com/sebastiandaberdaku) | [publications](https://scholar.google.com/citations?user=XpyjCaUAAAAJ) | [LinkedIn](https://www.linkedin.com/in/sebastian-daberdaku/) | [address](https://maps.app.goo.gl/tqsjkZusnGUZGxcW9) |
-| :---: | :---: |  :---: |  :---: |  :---: |  :---: | 
+| [email](mailto:sebastiandaberdaku@gmail.com) | [phone](tel:+393206748036) | [address](https://maps.app.goo.gl/tqsjkZusnGUZGxcW9) | [portfolio](https://github.com/sebastiandaberdaku) | [publications](https://scholar.google.com/citations?user=XpyjCaUAAAAJ) | [LinkedIn](https://www.linkedin.com/in/sebastian-daberdaku/) |
+| :-: | :-: | :-: | :-: | :-: | :-: | 
 
 Summary
 -------
@@ -88,7 +88,7 @@ Other formats
 -------------
 
 |[resume.html](resume.html) | [resume.pdf](resume.pdf) | [resume.docx](resume.docx) | [resume.rtf](resume.rtf) |
-| :---: | :---: | :---: | :---: |
+| :-: | :-: | :-: | :-: |
 
 ---
 
