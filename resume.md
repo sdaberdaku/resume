@@ -3,16 +3,12 @@ Sebastian Daberdaku, Ph.D.
 
 ---
 
-- `email`:        [sebastiandaberdaku@gmail.com](mailto:sebastiandaberdaku@gmail.com)
-- `phone`:        [(+39) 320 6748036](tel:+393206748036)
-- `portfolio`:    [GitHub](https://github.com/sebastiandaberdaku)
-- `publications`: [Google Scholar](https://scholar.google.com/citations?user=XpyjCaUAAAAJ)
-- `LinkedIn`:     [profile](https://www.linkedin.com/in/sebastian-daberdaku/)
-- `Address`:      [Selvazzano Dentro, Padova, Italy](https://maps.app.goo.gl/tqsjkZusnGUZGxcW9)
+| [email](mailto:sebastiandaberdaku@gmail.com) | [phone](tel:+393206748036) | [portfolio](https://github.com/sebastiandaberdaku) | [publications](https://scholar.google.com/citations?user=XpyjCaUAAAAJ) | [LinkedIn](https://www.linkedin.com/in/sebastian-daberdaku/) | [address](https://maps.app.goo.gl/tqsjkZusnGUZGxcW9) |
+| :---: | :---: |  :---: |  :---: |  :---: |  :---: | 
 
 Summary
 -------
-With over 5 years of experience as a data engineer and a PhD in Information Engineering, I specialize in crafting efficient, scalable, and resilient data pipelines. Proficient in technologies like Spark, Airflow, Python, DataBricks, TrinoDB, and AWS, I've worked across diverse domains including bioinformatics, clinical informatics, and finance. My research and data science background ensure a rigorous problem-solving approach. Additionally, I possess backend development expertise in Python and Java (Spring Boot). Demonstrating leadership in various projects, I excel in project management and collaboration. I am committed to ongoing learning and stayuing updated with the latest advancements in data engineering to drive impactful insights.
+With over 5 years of experience as a data engineer and a PhD in Information Engineering, I specialize in crafting efficient, scalable, and resilient data pipelines. Proficient in technologies like Spark, Airflow, Python, DataBricks, TrinoDB, and AWS, I've worked across diverse domains including bioinformatics, clinical informatics, and finance. My research and data science background ensure a rigorous problem-solving approach. I am committed to ongoing learning and staying updated with the latest advancements in data engineering to drive impactful insights.
 
 Experience
 ----------
