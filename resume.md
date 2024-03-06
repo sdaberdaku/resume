@@ -1,9 +1,5 @@
 Sebastian Daberdaku, Ph.D.
 ==========================
----
-
-|[resume.html](https://sebastiandaberdaku.github.io/resume/resume.html) | [resume.pdf](https://sebastiandaberdaku.github.io/resume/resume.pdf) | [resume.docx](https://sebastiandaberdaku.github.io/resume/resume.docx) | [resume.rtf](https://sebastiandaberdaku.github.io/resume/resume.rtf) |
-| :---: | :---: | :---: | :---: |
 
 ---
 
@@ -83,7 +79,7 @@ Education
 
 Awards and Achievements
 -----------------------
-- *13/07/2020* Winner (Team GiGi) of the ["Metagenomics Diagnosis for IBD Challenge" (MEDIC)](ttps://www.intervals.science/resources/sbv-improver/medic).
+- *13/07/2020* Winner (Team GiGi) of the ["Metagenomics Diagnosis for IBD Challenge" (MEDIC)](https://www.intervals.science/resources/sbv-improver/medic).
 - *21/11/2018* Winner of the PeerJ Award for the ["Best Contribution by an Early Career Researcher" @ BBCC2018](https://peerj.com/blog/post/115284881098/congratulations-to-the-first-round-of-peerj-award-winners) for the paper "Identification of protein pockets and cavities by Euclidean Distance Transform".
 - *2013 -- 2016* Full Ph.D. scholarship, University of Padua.
 
@@ -91,5 +87,12 @@ Personal Data
 -------------
 I hereby authorize the use of my personal data in accordance with GDPR 2016/679 (General Data Protection Regulation).
 
+Other formats
+-------------
+
+|[resume.html](https://sebastiandaberdaku.github.io/resume/resume.html) | [resume.pdf](https://sebastiandaberdaku.github.io/resume/resume.pdf) | [resume.docx](https://sebastiandaberdaku.github.io/resume/resume.docx) | [resume.rtf](https://sebastiandaberdaku.github.io/resume/resume.rtf) |
+| :---: | :---: | :---: | :---: |
+
 ---
+
 #### March 6th, 2024
