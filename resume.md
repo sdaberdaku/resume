@@ -91,7 +91,7 @@ I hereby authorize the use of my personal data in accordance with GDPR 2016/679 
 Other formats
 -------------
 
-|[resume.html](https://sebastiandaberdaku.github.io/resume/resume.html) | [resume.pdf](https://sebastiandaberdaku.github.io/resume/resume.pdf) | [resume.docx](https://sebastiandaberdaku.github.io/resume/resume.docx) | [resume.rtf](https://sebastiandaberdaku.github.io/resume/resume.rtf) |
+|[resume.html](resume.html) | [resume.pdf](resume.pdf) | [resume.docx](resume.docx) | [resume.rtf](resume.rtf) |
 | :---: | :---: | :---: | :---: |
 
 ---
