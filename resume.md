@@ -4,10 +4,11 @@ Sebastian Daberdaku, Ph.D.
 ---
 
 - `email`:        [sebastiandaberdaku@gmail.com](mailto:sebastiandaberdaku@gmail.com)
-- `phone`:        (+39) 320 6748036
+- `phone`:        [(+39) 320 6748036](tel:+393206748036)
 - `portfolio`:    [GitHub](https://github.com/sebastiandaberdaku)
 - `publications`: [Google Scholar](https://scholar.google.com/citations?user=XpyjCaUAAAAJ)
 - `LinkedIn`:     [profile](https://www.linkedin.com/in/sebastian-daberdaku/)
+- `Address`:      [Selvazzano Dentro, Padova, Italy](https://maps.app.goo.gl/tqsjkZusnGUZGxcW9)
 
 Summary
 -------
