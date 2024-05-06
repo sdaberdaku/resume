@@ -21,14 +21,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - uses: leafo/gh-actions-lua@v10
-      with:
-        luaVersion: "5.4.1"
-
     - name: Install pandoc and context
       run: |
         sudo apt update
-        sudo apt install -y pandoc context
+        sudo apt install -y pandoc context luarocks
         sudo luarocks install luasocket
 
     - name: Build resume
