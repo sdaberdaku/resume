@@ -24,8 +24,7 @@ jobs:
     - name: Install pandoc and context
       run: |
         sudo apt update
-        sudo apt install -y pandoc context luarocks
-        sudo luarocks install luasocket
+        sudo apt install -y pandoc context
 
     - name: Build resume
       run: make all
