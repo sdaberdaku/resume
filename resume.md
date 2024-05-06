@@ -13,7 +13,7 @@ With over 5 years of experience as a data engineer and a PhD in Information Engi
 Experience
 ----------
 ### <span>Aug 2023 -- present</span> &diams; <span>Data Engineering Tech Lead @ Cardo AI</span>
-- Developed a Helm Chart for deploying cost-effective and stable TrinoDB clusters on EKS with Karpenter. The clusters use EC2 spot instances for the Trino workers, and avoid spot termination disruptions by using a combination of graceful shutdown and query retry policy. Other features include spill-to-disk and Alluxio cache support on EC2 nodes with NVMe.
+- Developed a Helm Chart for deploying cost-effective and stable TrinoDB clusters on EKS with Karpenter. Although EC2 spot instances are used for the Trino workers, the cluster is not disrupted by spot termination events. Other features include spill-to-disk and Alluxio cache support on EC2 nodes with NVMe.
 - Developed a multi-account strategy for Cardo AI's AWS environments, for optimal data segregation, cost accounting, security and scalability.
 - Implemented fully-automated deployments of Apache Airflow and Databricks environments with Terraform modules and ArgoCD for various teams in the company, guaranteeing data separation and detailed cost allocation. 
 - Developed a Helm Chart for Spark Connect server and Spark Thrift server, which can be used concurrently by multiple Apache Spark applications, effectively optimising infrastructure costs and improving the overall developer experience.
