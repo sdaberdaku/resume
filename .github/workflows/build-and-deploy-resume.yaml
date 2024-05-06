@@ -12,7 +12,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     permissions:
       contents: write
     concurrency:
@@ -24,7 +24,7 @@ jobs:
     - name: Install pandoc and context
       run: |
         sudo apt update
-        sudo apt install -y pandoc context
+        sudo apt install -y texlive-latex-base pandoc context
 
     - name: Build resume
       run: make all
