@@ -31,10 +31,10 @@ pdf: init
 		--path=${OUT_DIR} \
 		--result=${BASE_FILENAME}.pdf \
 		--script context ${BASE_FILENAME}.tex > ${OUT_DIR}/context_${BASE_FILENAME}.log 2>&1;
-	rm -f ${OUT_DIR}/context_${BASE_FILENAME}.log; \
-	rm -f ${OUT_DIR}/${BASE_FILENAME}.log; \
-	rm -f ${OUT_DIR}/${BASE_FILENAME}.tex; \
-	rm -f ${OUT_DIR}/${BASE_FILENAME}.tuc
+	rm ${OUT_DIR}/context_${BASE_FILENAME}.log; \
+	rm ${OUT_DIR}/${BASE_FILENAME}.log; \
+	rm ${OUT_DIR}/${BASE_FILENAME}.tex; \
+	rm ${OUT_DIR}/${BASE_FILENAME}.tuc
 
 docx: init
 	pandoc \
