@@ -20,15 +20,12 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-    - name: Install Lua
-      uses: leafo/gh-actions-lua@v10
-      run: |
-        sudo luarocks install luasocket
 
     - name: Install pandoc and context
       run: |
         sudo apt update
         sudo apt install -y pandoc context
+        sudo luarocks install luasocket
 
     - name: Build resume
       run: make all
