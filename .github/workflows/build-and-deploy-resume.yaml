@@ -24,7 +24,8 @@ jobs:
     - name: Install pandoc and context
       run: |
         sudo apt update
-        sudo apt install -y texlive-latex-base pandoc context
+        sudo apt install -y pandoc context luarocks
+        luarocks install luasocket
 
     - name: Build resume
       run: make all
