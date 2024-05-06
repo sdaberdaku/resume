@@ -31,7 +31,7 @@ pdf: init
 	mtxrun \
 		--path=${OUT_DIR} \
 		--result=${BASE_FILENAME}.pdf \
-		--script context ${BASE_FILENAME}.tex > ${OUT_DIR}/context_${BASE_FILENAME}.log
+		--script env TMPDIR=~/tmp context ${BASE_FILENAME}.tex > ${OUT_DIR}/context_${BASE_FILENAME}.log
 	cat ${OUT_DIR}/context_${BASE_FILENAME}.log
 	rm ${OUT_DIR}/context_${BASE_FILENAME}.log; \
 	rm ${OUT_DIR}/${BASE_FILENAME}.log; \

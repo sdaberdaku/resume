@@ -13,7 +13,7 @@ With over 5 years of experience as a data engineer and a PhD in Information Engi
 Experience
 ----------
 ### <span>Aug 2023 -- present</span> &diams; <span>Data Engineering Tech Lead @ Cardo AI</span>
-- Developed a Helm Chart for deploying cost-effective and stable TrinoDB clusters on EKS with Karpenter, using EC2 spot instances for the Trino workers. Other features include spill-to-disk and Alluxio cache support on EC2 nodes with NVMe.
+- Developed a Helm Chart for deploying cost-effective and stable TrinoDB clusters on EKS with Karpenter, using EC2 spot instances for the Trino workers, spill-to-disk and Alluxio cache support on NVMe.
 - Developed a multi-account strategy for Cardo AI's AWS environments, for optimal data segregation, cost accounting, security and scalability.
 - Implemented fully-automated deployments of Apache Airflow and Databricks environments with Terraform modules and ArgoCD for various teams in the company, guaranteeing data separation and detailed cost allocation. 
 - Developed a Helm Chart for Spark Connect server and Spark Thrift server, which can be used concurrently by multiple Apache Spark applications, effectively optimising infrastructure costs and improving the overall developer experience.
@@ -64,17 +64,17 @@ Education
 ---------
 ### <span>2013 -- 2016</span> &diams; <span>Doctor of Philosophy</span>
 - Information Engineering, University of Padua
-- Thesis title: *Protein contour modelling and computation for complementarity detection and docking*.
+- Thesis: *Protein contour modelling and computation for complementarity detection and docking*.
 
 ### <span>2010 -- 2012</span> &diams; <span>Master's degree</span>
 - Computer Engineering, University of Padua
 - 110/110 *cum laude*
-- Thesis title: *DHT-based task allocation in Volunteer Computing*.
+- Thesis: *DHT-based task allocation in Volunteer Computing*.
 
 ### <span>2007 -- 2010</span> &diams; <span>Bachelor's degree</span>
 - Computer Engineering, University of Padua
 - 110/110 *cum laude*
-- Thesis title: *PariMulo: Credits*.
+- Thesis: *PariMulo: Credits*.
 
 Awards and Achievements
 -----------------------
