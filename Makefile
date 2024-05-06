@@ -27,11 +27,10 @@ pdf: init
 		--variable papersize=A4 \
 		--output ${OUT_DIR}/${BASE_FILENAME}.tex \
 		${IN_FILE} > /dev/null; \
-	mtxrun --version
 	mtxrun \
 		--path=${OUT_DIR} \
 		--result=${BASE_FILENAME}.pdf \
-		--script env TMPDIR=~/tmp context ${BASE_FILENAME}.tex > ${OUT_DIR}/context_${BASE_FILENAME}.log
+		--script context ${BASE_FILENAME}.tex > ${OUT_DIR}/context_${BASE_FILENAME}.log
 	cat ${OUT_DIR}/context_${BASE_FILENAME}.log
 	rm ${OUT_DIR}/context_${BASE_FILENAME}.log; \
 	rm ${OUT_DIR}/${BASE_FILENAME}.log; \
