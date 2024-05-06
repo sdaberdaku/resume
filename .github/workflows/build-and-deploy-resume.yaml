@@ -23,6 +23,7 @@ jobs:
 
     - name: Install pandoc and context
       run: |
+        sudo add-apt-repository ppa:staeglis/texlive-bugfix-2058409
         sudo apt update
         sudo apt install -y pandoc context
 
