@@ -92,7 +92,7 @@ I hereby authorize the use of my personal data in accordance with GDPR 2016/679 
 Other formats
 -------------
 
-|[resume.html](resume.html) | [resume.pdf](resume.pdf) | [resume.docx](resume.docx) | [resume.rtf](resume.rtf) |
+| [resume.html](resume.html) | [resume.pdf](resume.pdf) | [resume.docx](resume.docx) | [resume.rtf](resume.rtf) |
 | :-: | :-: | :-: | :-: |
 
 ---
