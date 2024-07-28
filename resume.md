@@ -55,6 +55,7 @@ Experience
 
 Professional Qualifications
 ---------------------------
+- *22/07/2024* &ensp; [Astronomer Certification DAG Authoring for Apache Airflow](https://www.credly.com/badges/cee6799e-a894-4b07-9dcd-76692a018806)
 - *11/01/2024* &ensp; [Astronomer Certification for Apache Airflow Fundamentals](https://www.credly.com/badges/184f3897-c798-4494-b67c-10952a2fa147)
 - *29/11/2021* &ensp; [AWS Certified Solutions Architect -- Associate](https://www.credly.com/badges/ce36cfb1-e1d5-49fb-9b17-1716044a1aab)
 - *19/07/2021* &ensp; [Elastic Certified Analyst](https://certified.elastic.co/48983e79-cd04-42a9-bc27-de286efd2e45)
