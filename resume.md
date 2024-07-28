@@ -81,7 +81,7 @@ Education
 
 Awards and Achievements
 -----------------------
-- *13/07/2020* &ensp; Winner (Team GiGi) of the ["Metagenomics Diagnosis for IBD Challenge" (MEDIC)](https://www.intervals.science/resources/sbv-improver/medic).
+- *13/07/2020* &ensp; Winner (Team GiGi) of the ["Metagenomics Diagnosis for IBD Challenge" (MEDIC)](https://www.dei.unipd.it/premiriconoscimenti).
 - *21/11/2018* &ensp; Winner of the PeerJ Award for the ["Best Contribution by an Early Career Researcher" @ BBCC2018](https://peerj.com/blog/post/115284881098/congratulations-to-the-first-round-of-peerj-award-winners) for the paper "Identification of protein pockets and cavities by Euclidean Distance Transform".
 - *2013 -- 2016* &ensp; Full Ph.D. scholarship, University of Padua.
 
