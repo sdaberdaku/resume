@@ -13,7 +13,7 @@ With over 5 years of experience as a data engineer and a PhD in Information Engi
 Experience
 ----------
 ### <span>Aug 2023 -- present</span> &diams; <span>Data Engineering Tech Lead @ Cardo AI</span>
-- Implemented a **fully automated Change Data Capture (CDC) of ~2k RDS Postgres tables to Delta Lake on AWS** with Kafka, Debezium, Spark Connect and Airflow on EKS, with fully automated monitoring comprised of Grafana Dashboards, Prometheus Rules and Alertmanager.
+- Implemented a **fully automated Change Data Capture (CDC) with schema evolution support of ~2k RDS Postgres tables to Delta Lake on AWS** with Kafka, Debezium, Confluent Schema Registry, Spark Connect and Airflow on EKS, with fully automated monitoring comprised of Grafana Dashboards, Prometheus Rules and Alertmanager.
 - Developed a **Helm Chart for deploying cost-effective and stable TrinoDB clusters on EKS with Karpenter**, using EC2 spot instances for the Trino workers, automatic query retry policy, spill-to-disk and Alluxio cache support on NVMe.
 - Developed a **multi-account strategy for Cardo AI's AWS environments**, for optimal data segregation, cost accounting, security and scalability.
 - Refactored the synchronization process of Cardo AI's structured finance suite ([Equalizer](https://cardoai.com/structured-finance-suite/)) using Airflow, Spark Connect and Delta Lake, enhancing parallelism and scalability.
