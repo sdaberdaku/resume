@@ -3,8 +3,8 @@ Sebastian Daberdaku, Ph.D.
 
 ---
 
-|[portfolio](https://github.com/sebastiandaberdaku) | [publications](https://scholar.google.com/citations?user=XpyjCaUAAAAJ) | [LinkedIn](https://www.linkedin.com/in/sebastian-daberdaku/) |
-| :-: | :-: | :-: | 
+| [portfolio](https://github.com/sebastiandaberdaku) | [publications](https://scholar.google.com/citations?user=XpyjCaUAAAAJ) | [LinkedIn](https://www.linkedin.com/in/sebastian-daberdaku/) | [Medium](https://medium.com/@sebastiandaberdaku) |
+| :-: | :-: | :-: | :-: |
 
 Summary
 -------
