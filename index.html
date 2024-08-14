@@ -110,7 +110,7 @@
   </style>
 </head>
 <body>
-<h1 id="sebastian-daberdaku-ph.d.">Sebastian Daberdaku, Ph.D.</h1>
+<h1 id="sebastian-daberdaku-ph.d.-data-engineering-tech-lead-cardo-ai-data-platform">Sebastian Daberdaku, Ph.D. | Data Engineering Tech Lead @ Cardo AI | Data Platform</h1>
 <hr />
 <table>
 <thead>
@@ -130,6 +130,7 @@
 <h3 id="aug-2023-present-data-engineering-tech-lead-cardo-ai"><span>Aug 2023 – present</span> ♦ <span>Data Engineering Tech Lead @ Cardo AI</span></h3>
 <ul>
 <li>Implemented a <strong>fully automated Change Data Capture (CDC) with schema evolution support of ~2k RDS Postgres tables to Delta Lake on AWS</strong> with Kafka, Debezium, Confluent Schema Registry, Spark Connect and Airflow on EKS, with fully automated monitoring comprised of Grafana Dashboards, Prometheus Rules and Alertmanager.</li>
+<li>Implemented and managed Cardo AI’s Data Science cloud infrastructure (AWS) and tooling on EKS with IaC (Terraform) and GitOps (ArgoCD), including automated <strong>KubeFlow</strong> deployment with <strong>deployKF</strong> and dedicated Kubernetes Job, <strong>MLflow</strong> deployment, and EKS node provisioning with <strong>Karpenter NodePools</strong> for correct workload segregation (spot vs. on-demand, AMD vs. ARM, GPU nodes).</li>
 <li>Developed a <strong>Helm Chart for deploying cost-effective and stable TrinoDB clusters on EKS with Karpenter</strong>, using EC2 spot instances for the Trino workers, automatic query retry policy, spill-to-disk and Alluxio cache support on NVMe.</li>
 <li>Developed a <strong>multi-account strategy for Cardo AI’s AWS environments</strong>, for optimal data segregation, cost accounting, security and scalability.</li>
 <li>Refactored the synchronization process of Cardo AI’s structured finance suite (<a href="https://cardoai.com/structured-finance-suite/" target="_blank">Equalizer</a>) using Airflow, Spark Connect and Delta Lake, enhancing parallelism and scalability.</li>
