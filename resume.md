@@ -1,4 +1,4 @@
-Sebastian Daberdaku, Ph.D.
+Sebastian Daberdaku, Ph.D. | Data Engineering Tech Lead @ Cardo AI | Data Platform
 ==========================
 
 ---
@@ -14,6 +14,7 @@ Experience
 ----------
 ### <span>Aug 2023 -- present</span> &diams; <span>Data Engineering Tech Lead @ Cardo AI</span>
 - Implemented a **fully automated Change Data Capture (CDC) with schema evolution support of ~2k RDS Postgres tables to Delta Lake on AWS** with Kafka, Debezium, Confluent Schema Registry, Spark Connect and Airflow on EKS, with fully automated monitoring comprised of Grafana Dashboards, Prometheus Rules and Alertmanager.
+- Implemented and managed Cardo AI's Data Science cloud infrastructure (AWS) and tooling on EKS with IaC (Terraform) and GitOps (ArgoCD), including automated **KubeFlow** deployment with **deployKF** and dedicated Kubernetes Job, **MLflow** deployment, and EKS node provisioning with **Karpenter NodePools** for correct workload segregation (spot vs. on-demand, AMD vs. ARM, GPU nodes). 
 - Developed a **Helm Chart for deploying cost-effective and stable TrinoDB clusters on EKS with Karpenter**, using EC2 spot instances for the Trino workers, automatic query retry policy, spill-to-disk and Alluxio cache support on NVMe.
 - Developed a **multi-account strategy for Cardo AI's AWS environments**, for optimal data segregation, cost accounting, security and scalability.
 - Refactored the synchronization process of Cardo AI's structured finance suite ([Equalizer](https://cardoai.com/structured-finance-suite/)) using Airflow, Spark Connect and Delta Lake, enhancing parallelism and scalability.
