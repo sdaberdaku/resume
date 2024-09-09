@@ -13,10 +13,11 @@ With over 5 years of experience as a data engineer and a PhD in Information Engi
 Experience
 ----------
 ### <span>Aug 2023 -- present</span> &diams; <span>Data Engineering Tech Lead @ Cardo AI</span>
+- Designed and implemented a **centralized AWS logging solution** using CloudWatch, Subscription Filters, Kinesis Firehose Data Stream, and S3 for log streaming, ensuring security, immutability, and cost-efficient storage across multiple AWS accounts.
 - Implemented a **fully automated Change Data Capture (CDC) with schema evolution support of ~2k RDS Postgres tables to Delta Lake on AWS** with Kafka, Debezium, Confluent Schema Registry, Spark Connect and Airflow on EKS, with fully automated monitoring comprised of Grafana Dashboards, Prometheus Rules and Alertmanager.
 - Implemented and managed Cardo AI's Data Science cloud infrastructure (AWS) and tooling on EKS with IaC (Terraform) and GitOps (ArgoCD), including automated **KubeFlow** deployment with **deployKF** and dedicated Kubernetes Job, **MLflow** deployment, and EKS node provisioning with **Karpenter NodePools** for correct workload segregation (spot vs. on-demand, AMD vs. ARM, GPU nodes). 
 - Developed a **Helm Chart for deploying cost-effective and stable TrinoDB clusters on EKS with Karpenter**, using EC2 spot instances for the Trino workers, automatic query retry policy, spill-to-disk and Alluxio cache support on NVMe.
-- Developed a **multi-account strategy for Cardo AI's AWS environments**, for optimal data segregation, cost accounting, security and scalability.
+- Developed a **multi-account strategy for Cardo AI's AWS environments** according the AWS Well-Architected Framework, for optimal data segregation, cost accounting, security and scalability.
 - Refactored the synchronization process of Cardo AI's structured finance suite ([Equalizer](https://cardoai.com/structured-finance-suite/)) using Airflow, Spark Connect and Delta Lake, enhancing parallelism and scalability.
 - Implemented fully-automated deployments of Apache Airflow and Databricks environments with Terraform modules and ArgoCD for various teams in the company, guaranteeing data separation and detailed cost allocation. 
 - Developed a **Helm Chart for Spark Connect server and Spark Thrift server**, which can be used concurrently by multiple Apache Spark applications, effectively optimising infrastructure costs and improving the overall developer experience.
