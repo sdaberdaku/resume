@@ -129,11 +129,13 @@
 <h2 id="experience">Experience</h2>
 <h3 id="aug-2023-present-data-engineering-tech-lead-cardo-ai"><span>Aug 2023 – present</span> ♦ <span>Data Engineering Tech Lead @ Cardo AI</span></h3>
 <ul>
+<li>Implemented a <strong>centralized multi-cluster Kubernetes (EKS) monitoring solution</strong> with the LGTM stack (Loki, Grafana, Tempo, and Mimir).</li>
 <li>Designed and implemented a <strong>centralized AWS logging solution</strong> using CloudWatch, Subscription Filters, Kinesis Firehose Data Stream, and S3 for log streaming, ensuring security, immutability, and cost-efficient storage across multiple AWS accounts.</li>
 <li>Implemented a <strong>fully automated Change Data Capture (CDC) with schema evolution support of ~2k RDS Postgres tables to Delta Lake on AWS</strong> with Kafka, Debezium, Confluent Schema Registry, Spark Connect and Airflow on EKS, with fully automated monitoring comprised of Grafana Dashboards, Prometheus Rules and Alertmanager.</li>
+<li>Designed and implemented a multi-AWS-account CI/CD infrastructure management pipeline with GitHub Actions and AWS CodeBuild.</li>
+<li>Developed a <strong>multi-account strategy for Cardo AI’s AWS environments</strong> according to the AWS Well-Architected Framework, for optimal data segregation, cost accounting, security and scalability. A centralized <strong>Networking</strong> account provides secure and private connectivity between the centralized services and the customer workloads while allowing fine-grained access controls with security groups and NACLs. A dedicated <strong>Infrastructure Management</strong> account is responsible for deploying and managing the cloud infrastructure while enforcing strict security rules. A <strong>Common Workloads</strong> account serves the shared services to multiple and independent <strong>Customer Workload</strong> accounts, ensuring cost-effective usage of resources, and data segregation. Finally, the <strong>Log Archive</strong> and <strong>Security Tooling</strong> accounts provide the means to securely and immutably store logs, metrics, traces, and to centrally operate security services.</li>
 <li>Implemented and managed Cardo AI’s Data Science cloud infrastructure (AWS) and tooling on EKS with IaC (Terraform) and GitOps (ArgoCD), including automated <strong>KubeFlow</strong> deployment with <strong>deployKF</strong> and dedicated Kubernetes Job, <strong>MLflow</strong> deployment, and EKS node provisioning with <strong>Karpenter NodePools</strong> for correct workload segregation (spot vs. on-demand, AMD vs. ARM, GPU nodes).</li>
 <li>Developed a <strong>Helm Chart for deploying cost-effective and stable TrinoDB clusters on EKS with Karpenter</strong>, using EC2 spot instances for the Trino workers, automatic query retry policy, spill-to-disk and Alluxio cache support on NVMe.</li>
-<li>Developed a <strong>multi-account strategy for Cardo AI’s AWS environments</strong> according the AWS Well-Architected Framework, for optimal data segregation, cost accounting, security and scalability.</li>
 <li>Refactored the synchronization process of Cardo AI’s structured finance suite (<a href="https://cardoai.com/structured-finance-suite/" target="_blank">Equalizer</a>) using Airflow, Spark Connect and Delta Lake, enhancing parallelism and scalability.</li>
 <li>Implemented fully-automated deployments of Apache Airflow and Databricks environments with Terraform modules and ArgoCD for various teams in the company, guaranteeing data separation and detailed cost allocation.</li>
 <li>Developed a <strong>Helm Chart for Spark Connect server and Spark Thrift server</strong>, which can be used concurrently by multiple Apache Spark applications, effectively optimising infrastructure costs and improving the overall developer experience.</li>
@@ -231,6 +233,6 @@
 </tbody>
 </table>
 <hr />
-<h4 id="september-9th-2024">September 9th, 2024</h4>
+<h4 id="september-13th-2024">September 13th, 2024</h4>
 </body>
 </html>
