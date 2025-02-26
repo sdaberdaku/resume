@@ -3,7 +3,7 @@ Sebastian Daberdaku, Ph.D. | Data Engineering Tech Lead @ Cardo AI | Data Platfo
 
 ---
 
-| [portfolio](https://github.com/sebastiandaberdaku) | [publications](https://scholar.google.com/citations?user=XpyjCaUAAAAJ) | [LinkedIn](https://www.linkedin.com/in/sebastian-daberdaku/) | [Medium](https://medium.com/@sebastiandaberdaku) |
+| [portfolio](https://github.com/sdaberdaku) | [publications](https://scholar.google.com/citations?user=XpyjCaUAAAAJ) | [LinkedIn](https://www.linkedin.com/in/sebastian-daberdaku/) | [Medium](https://medium.com/@sebastiandaberdaku) |
 | :-: | :-: | :-: | :-: |
 
 Summary
