@@ -8,7 +8,7 @@ To get started, follow these steps:
 
 1. Clone this repository to your local machine:
     ```sh
-    git clone https://github.com/sebastiandaberdaku/resume.git
+    git clone https://github.com/sdaberdaku/resume.git
     ```
 2. Navigate to the repository directory:
     ```sh
@@ -33,7 +33,7 @@ To generate various output formats (HTML, PDF, RTF, DOCX), follow these steps:
 ## Deploying to GitHub Pages
 This repository is configured to automatically deploy the generated output files to GitHub Pages.
 
-To access the resume online visit: [https://sebastiandaberdaku.github.io/resume](https://sebastiandaberdaku.github.io/resume)
+To access the resume online visit: [https://sdaberdaku.github.io/resume](https://sdaberdaku.github.io/resume)
 
 ## Customization
 Feel free to customize this repository to suit your needs. You can modify the Markdown template in resume.md, customize the output formats in the Makefile, or adjust the GitHub Actions workflow in `.github/workflows/build-resume.yaml`.
