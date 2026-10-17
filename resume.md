@@ -94,8 +94,8 @@ Selected Publications
 
 Professional Qualifications
 ---------------------------
-- *09/2025* &ensp; Astronomer Certification DAG Authoring for Apache Airflow 3
-- *09/2025* &ensp; Astronomer Certification for Apache Airflow 3 Fundamentals
+- *09/2025* &ensp; [Astronomer Certification DAG Authoring for Apache Airflow 3](https://www.credly.com/badges/ad3f86d0-abf2-4040-9d21-70c945657aec)
+- *09/2025* &ensp; [Astronomer Certification for Apache Airflow 3 Fundamentals](https://www.credly.com/badges/b5caf4c9-ff5c-4a25-89aa-46d4824a356c)
 - *22/07/2024* &ensp; [Astronomer Certification DAG Authoring for Apache Airflow](https://www.credly.com/badges/cee6799e-a894-4b07-9dcd-76692a018806)
 - *11/01/2024* &ensp; [Astronomer Certification for Apache Airflow Fundamentals](https://www.credly.com/badges/184f3897-c798-4494-b67c-10952a2fa147)
 - *29/11/2021* &ensp; [AWS Certified Solutions Architect -- Associate](https://www.credly.com/badges/ce36cfb1-e1d5-49fb-9b17-1716044a1aab) (expired 11/2024)
