@@ -2,7 +2,7 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Sebastian Daberdaku, Ph.D.\u160?| Data Engineering Tech Lead @ Cardo AI | Data Platform\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Sebastian Daberdaku, Ph.D.\u160?| Head of Platform & Data Engineering @ Cardo AI\par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
 {
 \trowd \trgaph120
@@ -33,63 +33,128 @@ Medium
 \intbl\row}
 {\pard \ql \f0 \sa180 \li0 \fi0 \par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Summary\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 With over 5 years of experience as a data engineer and a PhD in Information Engineering, I specialize in crafting efficient, scalable, and resilient data pipelines. Proficient in technologies like Spark, Airflow, Python, DataBricks, TrinoDB, Kafka, Debezium, and AWS, I\u8217've worked across diverse domains including bioinformatics, clinical informatics, and finance. My research and data science background ensure a rigorous problem-solving approach. I am committed to ongoing learning and staying updated with the latest advancements in data engineering to drive impactful insights.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Platform and data engineering leader with 6+ years of building cloud data platforms and a PhD in Information Engineering (434 citations, h-index 10). At Cardo AI I lead the platform/infrastructure and data engineering teams behind a multi-tenant structured-finance SaaS: multi-account AWS in the EU and US, 10 EKS clusters, an Apache Iceberg lakehouse served by Trino and Spark, and the GitOps, identity and security layers around them, including the infrastructure controls for its SOC 2 Type 2 audit. I contribute upstream to Trino and Airflow, was nominated as a Trino Champion, and spoke at Trino Summit 2024.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Skills\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Data:} Trino, Apache Spark (Spark Connect), Apache Iceberg, Delta Lake, Apache Airflow, Kafka, Debezium, PostgreSQL / Aurora, Snowflake, PyIceberg, DuckDB, Databricks.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Platform:} AWS (multi-account, EKS, Glue, S3, IAM Identity Center), Kubernetes, Karpenter, KEDA, Terraform, ArgoCD, Helm, HashiCorp Vault, Keycloak, Kyverno, GitHub Actions.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b FinOps:} Savings Plans, Cost and Usage Reports, OpenCost, spot capacity.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Observability and security:} Grafana LGTM stack, Prometheus, AWS Security Hub, GuardDuty, WAF, Prowler.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Languages:} Python, SQL, Bash, Java, C++, R.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Experience\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Aug 2023 \u8211- present \u9830? Data Engineering Tech Lead @ Cardo AI\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Implemented a {\b centralized multi-cluster Kubernetes (EKS) monitoring solution} with the LGTM stack (Loki, Grafana, Tempo, and Mimir).\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Designed and implemented a {\b centralized AWS logging solution} using CloudWatch, Subscription Filters, Kinesis Firehose Data Stream, and S3 for log streaming, ensuring security, immutability, and cost-efficient storage across multiple AWS accounts.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Implemented a {\b fully automated Change Data Capture (CDC) with schema evolution support of ~2k RDS Postgres tables to Delta Lake on AWS} with Kafka, Debezium, Confluent Schema Registry, Spark Connect and Airflow on EKS, with fully automated monitoring comprised of Grafana Dashboards, Prometheus Rules and Alertmanager.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Designed and implemented a multi-AWS-account CI/CD infrastructure management pipeline with GitHub Actions and AWS CodeBuild.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Developed a {\b multi-account strategy for Cardo AI\u8217's AWS environments} according to the AWS Well-Architected Framework, for optimal data segregation, cost accounting, security and scalability. A centralized {\b Networking} account provides secure and private connectivity between the centralized services and the customer workloads while allowing fine-grained access controls with security groups and NACLs. A dedicated {\b Infrastructure Management} account is responsible for deploying and managing the cloud infrastructure while enforcing strict security rules. A {\b Common Workloads} account serves the shared services to multiple and independent {\b Customer Workload} accounts, ensuring cost-effective usage of resources, and data segregation. Finally, the {\b Log Archive} and {\b Security Tooling} accounts provide the means to securely and immutably store logs, metrics, traces, and to centrally operate security services.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Implemented and managed Cardo AI\u8217's Data Science cloud infrastructure (AWS) and tooling on EKS with IaC (Terraform) and GitOps (ArgoCD), including automated {\b KubeFlow} deployment with {\b deployKF} and dedicated Kubernetes Job, {\b MLflow} deployment, and EKS node provisioning with {\b Karpenter NodePools} for correct workload segregation (spot vs.\u160?on-demand, AMD vs.\u160?ARM, GPU nodes).\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Developed a {\b Helm Chart for deploying cost-effective and stable TrinoDB clusters on EKS with Karpenter}, using EC2 spot instances for the Trino workers, automatic query retry policy, spill-to-disk and Alluxio cache support on NVMe.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Refactored the synchronization process of Cardo AI\u8217's structured finance suite ({\field{\*\fldinst{HYPERLINK "https://cardoai.com/structured-finance-suite/"}}{\fldrslt{\ul
-Equalizer
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Feb 2025 \u8211- present \u9830? Head of Platform & Data Engineering @ Cardo AI\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Lead the platform/infrastructure and data engineering teams ({\b 5 engineers}) behind Cardo AI\u8217's multi-tenant structured-finance SaaS: {\b 21 AWS accounts in the EU and US} (landing zone extended to the EU in 2025), {\b 10 EKS clusters and 17 tenants}, fully defined as code (Terraform, ArgoCD GitOps, a 38-chart Helm library) so any environment can be rebuilt from Git. Hands-on throughout: 1,790 merged PRs across 54 repositories and 730+ code reviews since 2022.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Re-platformed the data synchronization of Cardo AI\u8217's {\field{\*\fldinst{HYPERLINK "https://cardoai.com/solutions/by-product/"}}{\fldrslt{\ul
+structured-finance platform
 }}}
-) using Airflow, Spark Connect and Delta Lake, enhancing parallelism and scalability.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Implemented fully-automated deployments of Apache Airflow and Databricks environments with Terraform modules and ArgoCD for various teams in the company, guaranteeing data separation and detailed cost allocation.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Developed a {\b Helm Chart for Spark Connect server and Spark Thrift server}, which can be used concurrently by multiple Apache Spark applications, effectively optimising infrastructure costs and improving the overall developer experience.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Ensured that the Data Engineering team followed best practices and maintained high-quality code and data pipelines.\sa180\par}
+ onto an {\b Apache Iceberg lakehouse} (S3, AWS Glue, Spark Connect, Trino, Airflow) with incremental silver/gold pipelines, retiring the legacy pipeline after bit-for-bit parity tests. Led the migration from Delta Lake to Iceberg (12,000+ Iceberg tables) and moved 1,754 Glue databases into 16 per-tenant AWS accounts with zero downtime, using a parallel, dry-run-first migration tool.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Tuned the core Spark sync from plan-level analysis: memory and disk spill from 130 GB + 42 GB to {\b zero}, shuffle-write time from 253 s to 29 s, a 1.17-billion-row history rescan replaced by a 9-million-row partition read, and Iceberg files compacted from 2,988 \u215? 10.6 MB to ~83 \u215? 383 MB.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Retired the materialized reporting tables in favour of query-time derivation in Trino, so queries that used to run out of memory now complete. Benchmarked 413 production query shapes, traced the remaining regressions to a 19\u215? cardinality underestimate and rewrote the views to run at or below the tables\u8217' cost. Migrated 1,026 stored client SQL definitions across 13 tenants and 4 services with zero differences on 597k parity-checked rows.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Built an internal {\b Trino platform Helm chart} that generates catalogs, Vault credentials and access control from a declarative tenant model, replacing ~2,800 lines of hand-written YAML per deployment. Validated the migration by replaying 14M+ access decisions, then ran zero-downtime blue/green Trino upgrades.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Designed {\b multi-tenant workload isolation for Trino}: client tags route interactive, batch and AI-agent (MCP) queries into weighted per-tenant resource groups with server-side time limits and an 85% memory gate, sized from 28 days of query-log data, so a single tenant\u8217's burst no longer starves the cluster. Cut compute cost with Karpenter spot pools on the cheapest local-NVMe instance type (~20\u8211-25% lower hourly price), spill to disk, fault-tolerant spooling on S3 Express One Zone and working KEDA autoscaling.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Designed {\b tenants-as-code} in Terraform: one YAML catalog generates databases, Keycloak realms, Trino users, TLS certificates, CDN frontends and VPN routes for every tenant. Shipped it as a zero-downtime refactor (584 state moves, no resource replaced) guarded by plan-time checks and a {\f1 terraform test} CI suite.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Delivered the cloud-infrastructure controls for Cardo AI\u8217's {\b SOC 2 Type 2} audit (Security, Jun 2025 \u8211- Jan 2026), passed with no exceptions: IAM Identity Center SSO in place of IAM users, EKS Pod Identity, multi-realm Keycloak with Google and Microsoft federation, AWS Config, Security Hub, GuardDuty, Prowler and WAF, plus point-in-time restore for the lakehouse (Iceberg time travel) and per-tenant PostgreSQL.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Set the platform team\u8217's engineering standards: design docs, runbooks and architecture pages in the company documentation, stacked pull requests with zero-diff Terraform plans and Helm render diffs as acceptance criteria, and staged dev \u8594? staging \u8594? production rollouts.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Run FinOps for the AWS estate: Savings Plans and instance-mix analysis from the Pricing and Savings Plans APIs, Cost and Usage Reports and Prometheus usage, with an integer-programming optimizer. Plans run at 100% utilization and save 42% of on-demand-equivalent compute spend, with a further ~$10\u8211-12k/year identified.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Aug 2023 \u8211- Jan 2025 \u9830? Data Engineering Tech Lead @ Cardo AI\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Designed Cardo AI\u8217's {\b multi-account AWS landing zone} on the Well-Architected Framework (shared-VPC networking, infrastructure management, shared and per-customer workloads, artifact repository, log archive, security tooling) and rolled it out in the US in 2024.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Built centralized observability for EKS clusters across accounts on the {\b Grafana LGTM stack} (Loki, Grafana, Tempo, Mimir) with storage in the log-archive account, plus immutable, cost-efficient CloudWatch log collection to S3 (subscription filters, Kinesis Firehose) and cross-account monitoring.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Implemented automated {\b change data capture with schema evolution for ~800 RDS PostgreSQL tables} into Delta Lake (Strimzi Kafka, Debezium, Schema Registry/Avro, Spark Connect streaming, Airflow on EKS), packaged as an internal library with Prometheus alerts, Grafana dashboards, a self-healing connector DAG and source-vs-lake reconciliation; later open-sourced as kafka2delta.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Moved {\b Trino workers onto spot instances} by adding graceful worker shutdown to the official Trino Helm chart (upstream), so workers finish their running tasks before a spot interruption takes the node and fault-tolerant execution on an S3 exchange retries the rest. Added spill to disk, Alluxio cache on NVMe nodes, ARM64 workers and off-hours downscaling.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Built the data-science platform on EKS with Terraform and ArgoCD: Kubeflow (deployKF), MLflow, shared GPU nodes and Karpenter node pools for workload separation.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Automated per-team Airflow environments with Terraform modules and ArgoCD, with Kyverno-enforced workload segregation and OpenCost cost allocation; added a shared Spark Connect server and an OpenMetadata data catalog.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Replaced AWS Client VPN with self-hosted zero-trust access (NetBird, then Firezone) across clusters and accounts, and set up multi-account Terraform CI/CD with GitHub Actions, AWS CodeBuild and self-hosted runners on EKS.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Sep 2022 \u8211- Jul 2023 \u9830? Senior Data Engineer @ Cardo AI\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Refactored the whole Cardo AI Data Engineering infrastructure on the AWS cloud. Implemented a multi-environment setup with automated CI/CD and IaC principles.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Developed several Terraform modules for providing complex services to our stakeholders. {\b Tech stack}: AWS, K8s (EKS, Karpenter, Helm Chart, ArgoCD, Vault) TerraformHub Actions.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Developed an {\b on-demand big data processing} solution with Airflow \u8211- Spark \u8211- Delta Lake \u8211- K8s \u8211- Trino, released as an {\field{\*\fldinst{HYPERLINK "https://github.com/sebastiandaberdaku/apache-airflow-providers-pysparkonk8s"}}{\fldrslt{\ul
-Apache Airflow provider package
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Built Cardo AI\u8217's first data engineering platform on EKS as primary author: Trino (OAuth2, TLS, Vault), Airflow, Spark Operator, Superset, Kafka and JupyterHub, delivered with Argo CD.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Rebuilt the data platform on AWS in 2023 with a reusable Terraform module library (EKS, Karpenter, ArgoCD, Vault, Airflow, Trino), GitOps delivery and dev/prod pipelines with approval gates, then retired the legacy cluster.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Built on-demand Spark processing on Kubernetes orchestrated by Airflow, using a custom Spark build with a Glue-enabled Hive metastore and Delta Lake; released as internal Airflow providers (Spark-on-Kubernetes operator, IRSA-based Vault secrets backend) and later as the open-source {\field{\*\fldinst{HYPERLINK "https://github.com/sdaberdaku/apache-airflow-providers-pysparkonk8s"}}{\fldrslt{\ul
+pysparkonk8s provider
 }}}
-. {\b Tech stack}: K8s, Apache Airflow, Apache Spark, Delta Lake, AWS Glue (as meta-store), and Karpenter.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Developed and maintained several {\b ETL pipelines} with Apache Airflow and Databricks. {\b Tech stack}: Python, Apache Airflow, Databricks, Apache Spark (PySpark), Delta Lake.\sa180\par}
+.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Built and maintained ETL pipelines with Airflow, Databricks, PySpark and Delta Lake.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 May 2020 \u8211- Aug 2022 \u9830? Senior Data Scientist & Engineer @ Sorint.Tek\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b AWS Data Architect} for the Data Engineering team at InfoCert S.p.A where I developed and improved automated data ingestion processes. {\b Tech stack}: AWS Infrastructure (CloudFormation), CI/CD, Lambda, RedShift, Kinesis, Glue, RDS, S3, Python, fluentbit.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Baggage Carousel Assignment} at the Milan Bergamo Airport. Developed an automatic scheduling algorithm for the optimal assignment of flights to baggage belts in the baggage reclaim area of the airport, Client: SACBO S.p.A. {\b Tech stack}: Python (OR-Tools, SQLAlchemy), Oracle, Docker.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b SNIPE} (Sensor Network for Intelligent Predictive Enterprise). Developed an AI enabled IoT system for machinery revamping in foundries to monitor performance and enable predictive maintenance based on {\field{\*\fldinst{HYPERLINK "https://www.mangroviaiot.com/"}}{\fldrslt{\ul
-MangroviaIoT
-}}}
-, Client: FAE Technology S.p.A. {\b Tech stack}: Python (scikit-learn), TimescaleDB.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b ELK SEA}. Developed an analytics platform for anomaly detection and monitoring on the WiFi networks of the Linate and Malpensa airports (Milan, IT), Client: SEA SpA. {\b Tech stack}: Elasticsearch, Kibana, Logstash, RabbitMQ, Cisco Prime, Python (requests), bash.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b ELK ML OpenShift}. Developed machine learning models for microservice anomaly detection and root-cause analysis on an OpenShift cluster, Client: Intesa Sanpaolo Group Services S.C.p.A. {\b Tech stack}: Elasticsearch, Kibana.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b 2Vita-B}. Developed deep-learning models for stress and affect detection from wearable sensor data, Client: Atlantica Digital S.p.A. {\b Tech stack}: Python, Keras Tensorflow (CNN), scikit-learn, AWS SageMaker.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b AWS Data Architect} for the data engineering team at InfoCert S.p.A.: automated data ingestion with CloudFormation, Lambda, Redshift, Kinesis, Glue, RDS and S3.\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Tech Lead} for {\field{\*\fldinst{HYPERLINK "https://developers.infocert.digital/safe-lta/"}}{\fldrslt{\ul
-{\b Safe LTA}
+Safe LTA
 }}}
-, a cloud-based long-term repository of digital documents, Client: InfoCert S.p.A. {\b Tech stack}: Java (Spring Boot), Docker, ElasticSearch, Amazon S3, Kong API Gateway, Keycloak, RabbitMQ, SQS, Elastic Kubernetes Service, AWS Architecture (CloudFormation).\sa180\par}
+, InfoCert\u8217's cloud long-term repository of digital documents (Java Spring Boot, Elasticsearch, S3, Kong, Keycloak, RabbitMQ, SQS, EKS).\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Built an optimal flight-to-baggage-belt scheduling engine for Milan Bergamo Airport, SACBO S.p.A. (Python, OR-Tools).\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Delivered machine learning projects: predictive maintenance for foundry machinery (IoT, scikit-learn, TimescaleDB) for FAE Technology, anomaly detection on the Linate and Malpensa airport WiFi networks (SEA S.p.A.) and on an OpenShift microservice platform (Intesa Sanpaolo) with the Elastic stack, and CNN-based stress detection from wearable sensors (TensorFlow, SageMaker) for Atlantica Digital.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Jan 2016 \u8211- Apr 2020 \u9830? Postdoctoral Researcher @ University of Padua\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Data Mining from environmental, genetic and clinical variables in ALS}, Dept. of Information Engineering.\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab ALS prognosis prediction with machine learning and data mining methods. {\b Tech stack}: R (bnstruct), R-Shiny, Dynamic Bayesian Networks.\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Missing data imputation for static and dynamic mixed-type clinical data. {\b Tech stack}: R (e1071, caret, infotheo).\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Metagenomics diagnosis for Inflammatory Bowel Disease. {\b Tech stack}: R, SVM, Randomised Logistic Regression.\sa180\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Evolutionary-based approach for predicting protein interaction sites and residue mutation impact}, Dept. of Comparative Biomedicine and Food Science.\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Single-point-mutation effect prediction on metabolic networks with flux balance analysis and machine learning methods. {\b Tech stack}: Python.\sa180\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Models and algorithms for protein\u8211-protein docking}, Dept. of Information Engineering.\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Protein interface prediction with machine learning methods. {\b Tech stack}: C++, Python (scikit-learn).\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Protein surface representation for the docking problem. {\b Tech stack}: C++ (boost, MPI, Open-MP).\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Parallel computation of molecular surfaces with MPI/OpenMP. {\b Tech stack}: C++ (boost, MPI, Open-MP).\par}
-{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Protein pocket and cavity identification. {\b Tech stack}: C++, Python.\sa180\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Machine learning for ALS prognosis (dynamic Bayesian networks) and imputation of mixed-type clinical data (R); co-inventor on a patent application for predicting ALS progression.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Protein\u8211-protein docking: interface prediction with 3D Zernike descriptors and SVMs, and parallel molecular-surface computation in C++ with MPI and OpenMP.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Mutation-impact prediction on metabolic networks with flux balance analysis (Python), and IBD diagnosis from metagenomics data (winning team of the MEDIC challenge).\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Jan 2013 \u8211- Apr 2020 \u9830? Lecturer @ University of Padua\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i Computer Engineering Laboratory} course (C programming), B.Sc. in Information Engineering.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i Foundation of Mathematical Analysis and Probability} course (tutoring), B.Sc. in Biomedical Engineering.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i Probability and Statistics} course (tutoring), B.Sc. in Mathematics.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i Embedded Systems Programming} course (tutoring), M.Sc. in Computer Engineering.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Computer Engineering Laboratory (C programming), B.Sc. in Information Engineering; tutoring in mathematical analysis, probability and statistics, and embedded systems programming.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Open Source\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Trino:} 17 merged PRs to the {\field{\*\fldinst{HYPERLINK "https://github.com/trinodb/charts/pulls?q=is%3Apr+author%3Asdaberdaku+is%3Amerged"}}{\fldrslt{\ul
+official Helm charts
+}}}
+ (KEDA worker autoscaling, graceful worker shutdown, NetworkPolicy, JMX exporter, Trino Gateway) and 3 to {\field{\*\fldinst{HYPERLINK "https://github.com/trinodb/trino/pulls?q=is%3Apr+author%3Asdaberdaku+is%3Amerged"}}{\fldrslt{\ul
+Trino
+}}}
+ (Delta Lake connector, SQL routines).\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Apache Airflow:} AWS STS region support for the {\field{\*\fldinst{HYPERLINK "https://github.com/apache/airflow/pull/47495"}}{\fldrslt{\ul
+HashiCorp Vault provider
+}}}
+.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Own projects:} {\field{\*\fldinst{HYPERLINK "https://github.com/sdaberdaku/kafka2delta"}}{\fldrslt{\ul
+kafka2delta
+}}}
+ (Kafka to Delta Lake streaming, on PyPI), {\field{\*\fldinst{HYPERLINK "https://github.com/sdaberdaku/nodereaper"}}{\fldrslt{\ul
+nodereaper
+}}}
+ (removes empty and unhealthy Kubernetes nodes), {\field{\*\fldinst{HYPERLINK "https://github.com/sdaberdaku/aws-glue-data-catalog-spark-client"}}{\fldrslt{\ul
+aws-glue-data-catalog-spark-client
+}}}
+ (AWS Glue Data Catalog as the Spark metastore, Spark 4 included), {\field{\*\fldinst{HYPERLINK "https://cran.r-project.org/package=wkNNMI"}}{\fldrslt{\ul
+wkNNMI
+}}}
+ (R package on CRAN for k-NN imputation).\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Talks and Writing\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i 2024} \u8194? Trino Summit 2024: {\i Optimizing Trino on Kubernetes} ({\field{\*\fldinst{HYPERLINK "https://sdaberdaku.github.io/optimizing-trino-on-k8s/"}}{\fldrslt{\ul
+slides
+}}}
+).\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Articles in {\i Towards Data Engineering} on Medium:\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab {\field{\*\fldinst{HYPERLINK "https://medium.com/towards-data-engineering/enabling-aws-glue-support-in-apache-spark-4-2c1fca7a7149"}}{\fldrslt{\ul
+Enabling AWS Glue support in Apache Spark 4
+}}}
+ (2025)\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab {\field{\*\fldinst{HYPERLINK "https://medium.com/towards-data-engineering/centralized-aws-cloudwatch-log-collection-to-s3-7f66a066b48b"}}{\fldrslt{\ul
+Centralized AWS CloudWatch log collection to S3
+}}}
+ (2024)\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab {\field{\*\fldinst{HYPERLINK "https://medium.com/towards-data-engineering/exploring-the-machine-learning-capabilities-of-trino-b35a43a2b1d6"}}{\fldrslt{\ul
+Exploring the Machine Learning capabilities of Trino
+}}}
+ (2024)\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab {\field{\*\fldinst{HYPERLINK "https://medium.com/towards-data-engineering/testing-apache-airflow-dags-locally-with-testcontainers-and-localstack-6bca9ff62d61"}}{\fldrslt{\ul
+Testing Apache Airflow DAGs locally with Testcontainers and LocalStack
+}}}
+ (2024)\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab {\field{\*\fldinst{HYPERLINK "https://medium.com/towards-data-engineering/building-a-custom-apache-spark-docker-image-with-aws-glue-data-catalog-support-as-metastore-95ef9a709794"}}{\fldrslt{\ul
+Building a custom Apache Spark Docker image with AWS Glue Data Catalog support as metastore
+}}}
+ (2024)\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab {\field{\*\fldinst{HYPERLINK "https://medium.com/towards-data-engineering/performing-delta-table-operations-in-pyspark-with-spark-connect-3925b08d4766"}}{\fldrslt{\ul
+Performing Delta Table operations in PySpark with Spark Connect
+}}}
+ (2024)\sa180\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Selected Publications\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 434 citations, h-index 10 ({\field{\*\fldinst{HYPERLINK "https://scholar.google.com/citations?user=XpyjCaUAAAAJ"}}{\fldrslt{\ul
+Google Scholar
+}}}
+).\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i Antibody interface prediction with 3D Zernike descriptors and SVM}. Bioinformatics, 2019.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i Exploring the potential of 3D Zernike descriptors and SVM for protein\u8211-protein interface prediction}. BMC Bioinformatics, 2018.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i A combined interpolation and weighted k-nearest neighbours approach for the imputation of longitudinal ICU laboratory data}. Journal of Healthcare Informatics Research, 2020.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i Predicting functional impairment trajectories in amyotrophic lateral sclerosis: a probabilistic, multifactorial model of disease progression}. Journal of Neurology, 2022.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i Accelerating the computation of triangulated molecular surfaces with OpenMP}. The Journal of Supercomputing, 2019.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Patent application: {\i Method for determining a disease progression and survival prognosis for patients with amyotrophic lateral sclerosis} (WO2022018771A1, US 18/017,196).\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Co-editor and organizing committee member, 16th IEEE CIBCB 2019.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Professional Qualifications\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i 09/2025} \u8194? Astronomer Certification DAG Authoring for Apache Airflow 3\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i 09/2025} \u8194? Astronomer Certification for Apache Airflow 3 Fundamentals\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i 22/07/2024} \u8194? {\field{\*\fldinst{HYPERLINK "https://www.credly.com/badges/cee6799e-a894-4b07-9dcd-76692a018806"}}{\fldrslt{\ul
 Astronomer Certification DAG Authoring for Apache Airflow
 }}}
@@ -101,11 +166,11 @@ Astronomer Certification for Apache Airflow Fundamentals
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i 29/11/2021} \u8194? {\field{\*\fldinst{HYPERLINK "https://www.credly.com/badges/ce36cfb1-e1d5-49fb-9b17-1716044a1aab"}}{\fldrslt{\ul
 AWS Certified Solutions Architect \u8211- Associate
 }}}
-\par}
+ (expired 11/2024)\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i 19/07/2021} \u8194? {\field{\*\fldinst{HYPERLINK "https://certified.elastic.co/48983e79-cd04-42a9-bc27-de286efd2e45"}}{\fldrslt{\ul
 Elastic Certified Analyst
 }}}
-\par}
+ (expired 07/2023)\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i 21/01/2013} \u8194? License to practice the profession of {\i Information Engineer}, University of Padua\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Education\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 2013 \u8211- 2016 \u9830? Doctor of Philosophy\par}
@@ -133,6 +198,9 @@ Elastic Certified Analyst
 }}}
  for the paper \u8220"Identification of protein pockets and cavities by Euclidean Distance Transform\u8221".\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\i 2013 \u8211- 2016} \u8194? Full Ph.D.\u160?scholarship, University of Padua.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Languages\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Italian and Albanian: native.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab English: full professional proficiency.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Personal Data\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 I hereby authorize the use of my personal data in accordance with GDPR 2016/679 (General Data Protection Regulation).\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Other formats\par}
@@ -165,5 +233,5 @@ resume.rtf
 \intbl\row}
 {\pard \ql \f0 \sa180 \li0 \fi0 \par}
 {\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 October 29th, 2024\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs24 October 2026\par}
 }
