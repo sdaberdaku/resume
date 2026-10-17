@@ -20,6 +20,40 @@ local function add_target_blank (link)
     return link
 end
 
+-- Split the "Name | Role" title into the name and a subtitle line, so the page header can style them separately
+-- @param header (table) A header element
+-- @return (table|nil) The name header followed by a subtitle div, or nil to keep the header unchanged
+local function split_title (header)
+    local name, role = pandoc.utils.stringify(header.content):match('^(.-)%s*|%s*(.+)$')
+    if header.level ~= 1 or not name then
+        return nil
+    end
+    header.content = { pandoc.Str(name) }
+    return { header, pandoc.Div({ pandoc.Plain({ pandoc.Str(role) }) }, pandoc.Attr('', { 'subtitle' })) }
+end
+
+-- Turn "<span>dates</span> ♦ <span>title</span>" headings into "<span>title</span><span>dates</span>",
+-- dropping the separator, so the stylesheet can place the title left and the dates right
+-- @param header (table) A header element
+-- @return (table|nil) The rewritten header, or nil to keep the header unchanged
+local function title_before_dates (header)
+    local spans = {}
+    for _, inline in ipairs(header.content) do
+        if inline.t == 'Span' then
+            table.insert(spans, inline)
+        end
+    end
+    if header.level ~= 3 or #spans ~= 2 then
+        return nil
+    end
+    header.content = { spans[2], spans[1] }
+    return header
+end
+
+local function rewrite_header (header)
+    return split_title(header) or title_before_dates(header)
+end
+
 return {
-    { Link = add_target_blank }
+    { Link = add_target_blank, Header = rewrite_header }
 }

@@ -7,6 +7,9 @@ on:
       - main
     paths:
       - 'resume.md'
+      - 'templates/**'
+      - 'pdc-links-target-blank.lua'
+      - 'Makefile'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -21,11 +24,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Install pandoc and context
+    # Google Chrome, used to print the PDF, comes preinstalled on the runner
+    - name: Install pandoc
       run: |
-        sudo add-apt-repository ppa:staeglis/texlive-bugfix-2058409
         sudo apt update
-        sudo apt install -y pandoc context
+        sudo apt install -y pandoc
 
     - name: Build resume
       run: make all

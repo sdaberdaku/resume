@@ -1,10 +1,12 @@
 IN_FILE=resume.md
 BASE_FILENAME := ${basename ${IN_FILE}}
 OUT_DIR=output
+# The PDF is printed from the HTML page, so it uses the same stylesheet (templates/template.css, @media print)
+CHROME ?= google-chrome
 
 .PHONY: all clean
 
-all: html pdf docx rtf
+all: html pdf docx
 
 html: init
 	pandoc \
@@ -14,27 +16,19 @@ html: init
 		--from markdown \
 		--to html \
 		--output ${OUT_DIR}/${BASE_FILENAME}.html \
-		--metadata pagetitle=${BASE_FILENAME} \
+		--metadata pagetitle="Sebastian Daberdaku · Resume" \
 		${IN_FILE}; \
 	cp ${OUT_DIR}/${BASE_FILENAME}.html ${OUT_DIR}/index.html
 
-pdf: init
-	pandoc \
-		--standalone \
-		--template templates/template.tex \
-		--from markdown \
-		--to context \
-		--variable papersize=A4 \
-		--output ${OUT_DIR}/${BASE_FILENAME}.tex \
-		${IN_FILE} > /dev/null; \
-	mtxrun \
-		--path=${OUT_DIR} \
-		--result=${BASE_FILENAME}.pdf \
-		--script context ${BASE_FILENAME}.tex > ${OUT_DIR}/context_${BASE_FILENAME}.log 2>&1;
-	rm ${OUT_DIR}/context_${BASE_FILENAME}.log; \
-	rm ${OUT_DIR}/${BASE_FILENAME}.log; \
-	rm ${OUT_DIR}/${BASE_FILENAME}.tex; \
-	rm ${OUT_DIR}/${BASE_FILENAME}.tuc
+pdf: html
+	${CHROME} \
+		--headless \
+		--no-sandbox \
+		--disable-gpu \
+		--no-pdf-header-footer \
+		--virtual-time-budget=10000 \
+		--print-to-pdf=${OUT_DIR}/${BASE_FILENAME}.pdf \
+		file://$(abspath ${OUT_DIR}/${BASE_FILENAME}.html)
 
 docx: init
 	pandoc \
@@ -42,13 +36,7 @@ docx: init
 		--output ${OUT_DIR}/${BASE_FILENAME}.docx \
 		${IN_FILE}
 
-rtf: init
-	pandoc \
-		--standalone \
-		--output ${OUT_DIR}/${BASE_FILENAME}.rtf \
-		${IN_FILE}
-
-init: 
+init:
 	mkdir -p ${OUT_DIR}
 
 clean:

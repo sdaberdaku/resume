@@ -15,6 +15,7 @@ Skills
 - **Data:** Trino, Apache Spark (Spark Connect), Apache Iceberg, Delta Lake, Apache Airflow, Kafka, Debezium, PostgreSQL / Aurora, Snowflake, PyIceberg, DuckDB, Databricks.
 - **Platform:** AWS (multi-account, EKS, Glue, S3, IAM Identity Center), Kubernetes, Karpenter, KEDA, Terraform, ArgoCD, Helm, HashiCorp Vault, Keycloak, Kyverno, GitHub Actions.
 - **FinOps:** Savings Plans, Cost and Usage Reports, OpenCost, spot capacity.
+- **AI-assisted engineering:** Claude Code, agent skills, MCP, Amazon Bedrock.
 - **Observability and security:** Grafana LGTM stack, Prometheus, AWS Security Hub, GuardDuty, WAF, Prowler.
 - **Languages:** Python, SQL, Bash, Java, C++, R.
 
@@ -30,6 +31,7 @@ Experience
 - Designed **tenants-as-code** in Terraform: one YAML catalog generates databases, Keycloak realms, Trino users, TLS certificates, CDN frontends and VPN routes for every tenant. Shipped it as a zero-downtime refactor (584 state moves, no resource replaced) guarded by plan-time checks and a `terraform test` CI suite.
 - Delivered the cloud-infrastructure controls for Cardo AI's **SOC 2 Type 2** audit (Security, Jun 2025 -- Jan 2026), passed with no exceptions: IAM Identity Center SSO in place of IAM users, EKS Pod Identity, multi-realm Keycloak with Google and Microsoft federation, AWS Config, Security Hub, GuardDuty, Prowler and WAF, plus point-in-time restore for the lakehouse (Iceberg time travel) and per-tenant PostgreSQL.
 - Set the platform team's engineering standards: design docs, runbooks and architecture pages in the company documentation, stacked pull requests with zero-diff Terraform plans and Helm render diffs as acceptance criteria, and staged dev → staging → production rollouts.
+- Introduced AI-assisted development across the platform team: agent context files in 9 core repositories and agent skills that turn runbooks (tenant and service onboarding, Trino user changes) into guided procedures with pre-flight checks, so agents ask for missing inputs instead of guessing and catch misconfigurations before editing. Kept it production-safe through zero-diff Terraform plans, Helm render diffs and staged rollouts.
 - Run FinOps for the AWS estate: Savings Plans and instance-mix analysis from the Pricing and Savings Plans APIs, Cost and Usage Reports and Prometheus usage, with an integer-programming optimizer. Plans run at 100% utilization and save 42% of on-demand-equivalent compute spend, with a further ~$10--12k/year identified.
 
 ### <span>Aug 2023 -- Jan 2025</span> &diams; <span>Data Engineering Tech Lead @ Cardo AI</span>
@@ -135,8 +137,8 @@ I hereby authorize the use of my personal data in accordance with GDPR 2016/679 
 Other formats
 -------------
 
-| [resume.html](resume.html) | [resume.pdf](resume.pdf) | [resume.docx](resume.docx) | [resume.rtf](resume.rtf) |
-| :-: | :-: | :-: | :-: |
+| [resume.pdf](resume.pdf) | [resume.docx](resume.docx) |
+| :-: | :-: |
 
 ---
 

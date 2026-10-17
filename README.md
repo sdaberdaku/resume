@@ -1,6 +1,6 @@
 # Professional Resume Manager
 
-Welcome to My Professional Resume Manager repository! This repository is designed to help manage my professional resume in Markdown format and deploy it in various formats (HTML, PDF, RTF, DOCX) using GitHub Pages.
+Welcome to My Professional Resume Manager repository! This repository is designed to help manage my professional resume in Markdown format and deploy it as HTML, PDF and DOCX on GitHub Pages.
 
 ## Getting Started
 
@@ -17,13 +17,14 @@ To get started, follow these steps:
 3. Edit the `resume.md` file with the resume details.
 
 ## Generating Output Formats
-To generate various output formats (HTML, PDF, RTF, DOCX), follow these steps:
+To generate the output formats (HTML, PDF, DOCX), follow these steps:
 
-1. Install the required dependencies. If you haven't already, ensure you have pandoc and context installed on your system.
+1. Install pandoc and Google Chrome. The HTML page is styled by `templates/template.css`, and the PDF is that page printed by headless Chrome, so both share one design.
     ```sh
     sudo apt update
-    sudo apt install -y pandoc context
+    sudo apt install -y pandoc
     ```
+    To use another Chromium-based browser for the PDF, pass its binary: `make pdf CHROME=chromium`.
 2. Run the following command to generate the output formats:
     ```sh
     make all
@@ -36,7 +37,7 @@ This repository is configured to automatically deploy the generated output files
 To access the resume online visit: [https://sdaberdaku.github.io/resume](https://sdaberdaku.github.io/resume)
 
 ## Customization
-Feel free to customize this repository to suit your needs. You can modify the Markdown template in resume.md, customize the output formats in the Makefile, or adjust the GitHub Actions workflow in `.github/workflows/build-resume.yaml`.
+Feel free to customize this repository to suit your needs. You can modify the Markdown template in resume.md, customize the output formats in the Makefile, or adjust the GitHub Actions workflow in `.github/workflows/build-and-deploy-resume.yaml`.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
@@ -45,4 +46,3 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 - [pandoc_resume](https://github.com/mszep/pandoc_resume)
 - [GitHub Pages](https://pages.github.com/)
 - [pandoc](https://pandoc.org/)
-- [context](https://wiki.contextgarden.net/Main_Page)
