@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>resume</title>
+  <title>Sebastian Daberdaku · Resume</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -14,103 +14,292 @@
     ul.task-list{list-style: none;}
   </style>
   <style type="text/css">
-  /*
-   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
-   *
-   * CSS for making a resume with pandoc. Inspired by moderncv.
-   *
-   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
-   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
-   */
+  /* Resume stylesheet for the HTML build. The PDF uses templates/template.tex instead. */
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-  /* Whole document */
+  :root {
+      --bg: #ffffff;
+      --fg: #1f2328;
+      --muted: #59636e;
+      --line: #d8dee4;
+      --accent: #0f6e6e;
+      --accent-soft: #e6f2f2;
+      color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+      :root {
+          --bg: #0f1418;
+          --fg: #e6edf3;
+          --muted: #9aa7b2;
+          --line: #2b343c;
+          --accent: #5cc8c8;
+          --accent-soft: #15292b;
+          color-scheme: dark;
+      }
+  }
+
+  /* Page */
+  html {
+      background: var(--bg);
+  }
   body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      background: #FFFFFF;
-      padding: 10px 10px 10px 10px;
+      font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+      max-width: 50rem;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 4rem;
+      hyphens: manual;
+  }
+  @media (max-width: 600px) {
+      body {
+          font-size: 15px;
+          padding: 2rem 1rem 3rem;
+      }
   }
 
-  /* Title of the resume */
+  /* Header: name, role (split from the title by the Lua filter) and links */
   h1 {
-      font-size: 55px;
-      color: #757575;
-      text-align:center;
-      margin-bottom:15px;
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--fg);
+      text-align: left;
+      margin: 0;
   }
-  /* h1:hover { */
-  /*     background-color: #757575; */
-  /*     color: #FFFFFF; */
-  /*     text-shadow: 1px 1px 1px #333; */
-  /* } */
-
-  /* Titles of categories */
-  h2 {
-      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
-      color: #397249;
+  .subtitle {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--muted);
+      margin: 0.4rem 0 0;
   }
-  /* There is a bar just before each category */
-  h2:before {
-      content: "";
-      display: inline-block;
-      margin-right:1%;
-      width: 16%;
-      height: 10px;
-      /* This is called "rulecolor" in the ConTeXt stylesheet. */
-      background-color: #9CB770;
-  }
-  /* h2:hover { */
-  /*     background-color: #397249; */
-  /*     color: #FFFFFF; */
-  /*     text-shadow: 1px 1px 1px #333; */
-  /* } */
-
-  /* Definitions */
-  dt {
-      float: left;
-      clear: left;
-      width: 17%;
-      font-weight: bold;
-  }
-  dd {
-      margin-left: 17%;
-      margin-bottom:7px;
-  }
-  p {
-      margin-top:0;
-      margin-bottom:7px;
-  }
-
-  /* Blockquotes */
-  blockquote {
-      text-align: center
-  }
-
-  /* Links */
-  a {
-      text-decoration: none;
-      color: #397249;
-  }
-  a:hover, a:active {
-      background-color: #397249;
-      color: #FFFFFF;
-      text-decoration: none;
-      text-shadow: 1px 1px 1px #333;
-  }
-
-  /* Horizontal separators */
   hr {
-      color: #A6A6A6;
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 1.75rem 0;
+  }
+  h1 + .subtitle + hr {
+      display: none;
   }
 
-  table {
-      width: 100%;
+  /* The link and download rows are pandoc tables; show them as rows of pills */
+  hr + table,
+  #other-formats + table {
+      display: block;
+      width: auto;
+      margin: 1.25rem 0 0;
+      border: 0;
+  }
+  hr + table colgroup,
+  #other-formats + table colgroup,
+  hr + table tbody,
+  #other-formats + table tbody {
+      display: none;
+  }
+  hr + table thead,
+  hr + table tr,
+  #other-formats + table thead,
+  #other-formats + table tr {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      border: 0;
+  }
+  hr + table th,
+  #other-formats + table th {
+      display: block;
+      padding: 0;
+      border: 0;
+      font-weight: 500;
+  }
+  hr + table a,
+  #other-formats + table a {
+      display: inline-block;
+      padding: 0.3rem 0.85rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--fg);
+      font-size: 0.9rem;
+      text-decoration: none;
+      text-transform: capitalize;
+  }
+  hr + table a:hover,
+  #other-formats + table a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+  }
+  #other-formats + table a {
+      text-transform: none;
+  }
+
+  /* Section titles */
+  h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 2.75rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--line);
+  }
+
+  /* Role and degree headings: the Lua filter emits "<span>title</span><span>dates</span>" */
+  h3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.15rem 1rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--fg);
+      margin: 1.75rem 0 0.5rem;
+  }
+  h3 span:last-child {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+  }
+
+  /* Text */
+  p {
+      margin: 0 0 0.75rem;
+  }
+  ul {
+      margin: 0 0 0.5rem;
+      padding-left: 1.2rem;
+  }
+  li {
+      margin: 0.35rem 0;
+  }
+  li::marker {
+      color: var(--accent);
+  }
+  ul ul {
+      margin-top: 0.25rem;
+  }
+  strong {
+      font-weight: 600;
+  }
+  a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+  }
+  a:hover {
+      text-decoration-thickness: 2px;
+  }
+
+  /* Skills: one line per group, no bullets */
+  #skills + ul {
+      list-style: none;
+      padding: 0;
+  }
+
+  /* Dates leading a list item ("*09/2025* &ensp; ..."); limited to the sections built that way, because
+     CSS can't tell a leading <em> from one that follows plain text, like "Thesis: *...*" */
+  #professional-qualifications + ul > li > em:first-child,
+  #awards-and-achievements + ul > li > em:first-child {
+      font-style: normal;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+  }
+
+  /* Footer */
+  #personal-data + p {
+      font-size: 0.85em;
+      color: var(--muted);
+  }
+  h4 {
+      font-size: 0.85em;
+      font-weight: 400;
+      color: var(--muted);
+      margin: 0;
+  }
+  h4::before {
+      content: "Last updated ";
+  }
+
+  /* Printing, including the PDF build (make pdf prints this page with headless Chrome) */
+  @page {
+      size: A4;
+      margin: 12mm 15mm;
+  }
+  @media print {
+      body {
+          font-size: 9.5pt;
+          line-height: 1.4;
+          max-width: none;
+          padding: 0;
+      }
+      h1 {
+          font-size: 22pt;
+      }
+      .subtitle {
+          font-size: 11.5pt;
+          margin-top: 2pt;
+      }
+      hr + table {
+          margin-top: 8pt;
+      }
+      hr + table a {
+          padding: 1pt 8pt;
+          font-size: 8.5pt;
+      }
+      #other-formats,
+      #other-formats + table {
+          display: none;
+      }
+      h2 {
+          margin: 14pt 0 6pt;
+          padding-bottom: 3pt;
+          font-size: 8pt;
+          break-after: avoid;
+      }
+      hr {
+          display: none;
+      }
+      h4 {
+          margin-top: 6pt;
+      }
+      h3 {
+          margin: 9pt 0 3pt;
+          font-size: 10.5pt;
+          break-after: avoid;
+      }
+      h3 span:last-child {
+          font-size: 9pt;
+      }
+      p {
+          margin-bottom: 4pt;
+      }
+      li {
+          margin: 2pt 0;
+      }
+      li {
+          break-inside: avoid;
+      }
+      a {
+          color: inherit;
+          text-decoration: none;
+      }
   }
   </style>
 </head>
 <body>
-<h1 id="sebastian-daberdaku-ph.d.-head-of-platform-data-engineering-cardo-ai">Sebastian Daberdaku, Ph.D. | Head of Platform &amp; Data Engineering @ Cardo AI</h1>
+<h1 id="sebastian-daberdaku-ph.d.-head-of-platform-data-engineering-cardo-ai">Sebastian Daberdaku, Ph.D. </h1>
+<div class="subtitle">
+Head of Platform &amp; Data Engineering @ Cardo AI
+</div>
 <hr />
 <table>
 <thead>
@@ -131,11 +320,12 @@
 <li><strong>Data:</strong> Trino, Apache Spark (Spark Connect), Apache Iceberg, Delta Lake, Apache Airflow, Kafka, Debezium, PostgreSQL / Aurora, Snowflake, PyIceberg, DuckDB, Databricks.</li>
 <li><strong>Platform:</strong> AWS (multi-account, EKS, Glue, S3, IAM Identity Center), Kubernetes, Karpenter, KEDA, Terraform, ArgoCD, Helm, HashiCorp Vault, Keycloak, Kyverno, GitHub Actions.</li>
 <li><strong>FinOps:</strong> Savings Plans, Cost and Usage Reports, OpenCost, spot capacity.</li>
+<li><strong>AI-assisted engineering:</strong> Claude Code, agent skills, MCP, Amazon Bedrock.</li>
 <li><strong>Observability and security:</strong> Grafana LGTM stack, Prometheus, AWS Security Hub, GuardDuty, WAF, Prowler.</li>
 <li><strong>Languages:</strong> Python, SQL, Bash, Java, C++, R.</li>
 </ul>
 <h2 id="experience">Experience</h2>
-<h3 id="feb-2025-present-head-of-platform-data-engineering-cardo-ai"><span>Feb 2025 – present</span> ♦ <span>Head of Platform &amp; Data Engineering @ Cardo AI</span></h3>
+<h3 id="feb-2025-present-head-of-platform-data-engineering-cardo-ai"><span>Head of Platform &amp; Data Engineering @ Cardo AI</span><span>Feb 2025 – present</span></h3>
 <ul>
 <li>Lead the platform/infrastructure and data engineering teams (<strong>5 engineers</strong>) behind Cardo AI’s multi-tenant structured-finance SaaS: <strong>21 AWS accounts in the EU and US</strong> (landing zone extended to the EU in 2025), <strong>10 EKS clusters and 17 tenants</strong>, fully defined as code (Terraform, ArgoCD GitOps, a 38-chart Helm library) so any environment can be rebuilt from Git. Hands-on throughout: 1,790 merged PRs across 54 repositories and 730+ code reviews since 2022.</li>
 <li>Re-platformed the data synchronization of Cardo AI’s <a href="https://cardoai.com/solutions/by-product/" target="_blank">structured-finance platform</a> onto an <strong>Apache Iceberg lakehouse</strong> (S3, AWS Glue, Spark Connect, Trino, Airflow) with incremental silver/gold pipelines, retiring the legacy pipeline after bit-for-bit parity tests. Led the migration from Delta Lake to Iceberg (12,000+ Iceberg tables) and moved 1,754 Glue databases into 16 per-tenant AWS accounts with zero downtime, using a parallel, dry-run-first migration tool.</li>
@@ -146,9 +336,10 @@
 <li>Designed <strong>tenants-as-code</strong> in Terraform: one YAML catalog generates databases, Keycloak realms, Trino users, TLS certificates, CDN frontends and VPN routes for every tenant. Shipped it as a zero-downtime refactor (584 state moves, no resource replaced) guarded by plan-time checks and a <code>terraform test</code> CI suite.</li>
 <li>Delivered the cloud-infrastructure controls for Cardo AI’s <strong>SOC 2 Type 2</strong> audit (Security, Jun 2025 – Jan 2026), passed with no exceptions: IAM Identity Center SSO in place of IAM users, EKS Pod Identity, multi-realm Keycloak with Google and Microsoft federation, AWS Config, Security Hub, GuardDuty, Prowler and WAF, plus point-in-time restore for the lakehouse (Iceberg time travel) and per-tenant PostgreSQL.</li>
 <li>Set the platform team’s engineering standards: design docs, runbooks and architecture pages in the company documentation, stacked pull requests with zero-diff Terraform plans and Helm render diffs as acceptance criteria, and staged dev → staging → production rollouts.</li>
+<li>Introduced AI-assisted development across the platform team: agent context files in 9 core repositories and agent skills that turn runbooks (tenant and service onboarding, Trino user changes) into guided procedures with pre-flight checks, so agents ask for missing inputs instead of guessing and catch misconfigurations before editing. Kept it production-safe through zero-diff Terraform plans, Helm render diffs and staged rollouts.</li>
 <li>Run FinOps for the AWS estate: Savings Plans and instance-mix analysis from the Pricing and Savings Plans APIs, Cost and Usage Reports and Prometheus usage, with an integer-programming optimizer. Plans run at 100% utilization and save 42% of on-demand-equivalent compute spend, with a further ~$10–12k/year identified.</li>
 </ul>
-<h3 id="aug-2023-jan-2025-data-engineering-tech-lead-cardo-ai"><span>Aug 2023 – Jan 2025</span> ♦ <span>Data Engineering Tech Lead @ Cardo AI</span></h3>
+<h3 id="aug-2023-jan-2025-data-engineering-tech-lead-cardo-ai"><span>Data Engineering Tech Lead @ Cardo AI</span><span>Aug 2023 – Jan 2025</span></h3>
 <ul>
 <li>Designed Cardo AI’s <strong>multi-account AWS landing zone</strong> on the Well-Architected Framework (shared-VPC networking, infrastructure management, shared and per-customer workloads, artifact repository, log archive, security tooling) and rolled it out in the US in 2024.</li>
 <li>Built centralized observability for EKS clusters across accounts on the <strong>Grafana LGTM stack</strong> (Loki, Grafana, Tempo, Mimir) with storage in the log-archive account, plus immutable, cost-efficient CloudWatch log collection to S3 (subscription filters, Kinesis Firehose) and cross-account monitoring.</li>
@@ -158,27 +349,27 @@
 <li>Automated per-team Airflow environments with Terraform modules and ArgoCD, with Kyverno-enforced workload segregation and OpenCost cost allocation; added a shared Spark Connect server and an OpenMetadata data catalog.</li>
 <li>Replaced AWS Client VPN with self-hosted zero-trust access (NetBird, then Firezone) across clusters and accounts, and set up multi-account Terraform CI/CD with GitHub Actions, AWS CodeBuild and self-hosted runners on EKS.</li>
 </ul>
-<h3 id="sep-2022-jul-2023-senior-data-engineer-cardo-ai"><span>Sep 2022 – Jul 2023</span> ♦ <span>Senior Data Engineer @ Cardo AI</span></h3>
+<h3 id="sep-2022-jul-2023-senior-data-engineer-cardo-ai"><span>Senior Data Engineer @ Cardo AI</span><span>Sep 2022 – Jul 2023</span></h3>
 <ul>
 <li>Built Cardo AI’s first data engineering platform on EKS as primary author: Trino (OAuth2, TLS, Vault), Airflow, Spark Operator, Superset, Kafka and JupyterHub, delivered with Argo CD.</li>
 <li>Rebuilt the data platform on AWS in 2023 with a reusable Terraform module library (EKS, Karpenter, ArgoCD, Vault, Airflow, Trino), GitOps delivery and dev/prod pipelines with approval gates, then retired the legacy cluster.</li>
 <li>Built on-demand Spark processing on Kubernetes orchestrated by Airflow, using a custom Spark build with a Glue-enabled Hive metastore and Delta Lake; released as internal Airflow providers (Spark-on-Kubernetes operator, IRSA-based Vault secrets backend) and later as the open-source <a href="https://github.com/sdaberdaku/apache-airflow-providers-pysparkonk8s" target="_blank">pysparkonk8s provider</a>.</li>
 <li>Built and maintained ETL pipelines with Airflow, Databricks, PySpark and Delta Lake.</li>
 </ul>
-<h3 id="may-2020-aug-2022-senior-data-scientist-engineer-sorint.tek"><span>May 2020 – Aug 2022</span> ♦ <span>Senior Data Scientist &amp; Engineer @ Sorint.Tek</span></h3>
+<h3 id="may-2020-aug-2022-senior-data-scientist-engineer-sorint.tek"><span>Senior Data Scientist &amp; Engineer @ Sorint.Tek</span><span>May 2020 – Aug 2022</span></h3>
 <ul>
 <li><strong>AWS Data Architect</strong> for the data engineering team at InfoCert S.p.A.: automated data ingestion with CloudFormation, Lambda, Redshift, Kinesis, Glue, RDS and S3.</li>
 <li><strong>Tech Lead</strong> for <a href="https://developers.infocert.digital/safe-lta/" target="_blank">Safe LTA</a>, InfoCert’s cloud long-term repository of digital documents (Java Spring Boot, Elasticsearch, S3, Kong, Keycloak, RabbitMQ, SQS, EKS).</li>
 <li>Built an optimal flight-to-baggage-belt scheduling engine for Milan Bergamo Airport, SACBO S.p.A. (Python, OR-Tools).</li>
 <li>Delivered machine learning projects: predictive maintenance for foundry machinery (IoT, scikit-learn, TimescaleDB) for FAE Technology, anomaly detection on the Linate and Malpensa airport WiFi networks (SEA S.p.A.) and on an OpenShift microservice platform (Intesa Sanpaolo) with the Elastic stack, and CNN-based stress detection from wearable sensors (TensorFlow, SageMaker) for Atlantica Digital.</li>
 </ul>
-<h3 id="jan-2016-apr-2020-postdoctoral-researcher-university-of-padua"><span>Jan 2016 – Apr 2020</span> ♦ <span>Postdoctoral Researcher @ University of Padua</span></h3>
+<h3 id="jan-2016-apr-2020-postdoctoral-researcher-university-of-padua"><span>Postdoctoral Researcher @ University of Padua</span><span>Jan 2016 – Apr 2020</span></h3>
 <ul>
 <li>Machine learning for ALS prognosis (dynamic Bayesian networks) and imputation of mixed-type clinical data (R); co-inventor on a patent application for predicting ALS progression.</li>
 <li>Protein–protein docking: interface prediction with 3D Zernike descriptors and SVMs, and parallel molecular-surface computation in C++ with MPI and OpenMP.</li>
 <li>Mutation-impact prediction on metabolic networks with flux balance analysis (Python), and IBD diagnosis from metagenomics data (winning team of the MEDIC challenge).</li>
 </ul>
-<h3 id="jan-2013-apr-2020-lecturer-university-of-padua"><span>Jan 2013 – Apr 2020</span> ♦ <span>Lecturer @ University of Padua</span></h3>
+<h3 id="jan-2013-apr-2020-lecturer-university-of-padua"><span>Lecturer @ University of Padua</span><span>Jan 2013 – Apr 2020</span></h3>
 <ul>
 <li>Computer Engineering Laboratory (C programming), B.Sc. in Information Engineering; tutoring in mathematical analysis, probability and statistics, and embedded systems programming.</li>
 </ul>
@@ -223,18 +414,18 @@
 <li><em>21/01/2013</em>   License to practice the profession of <em>Information Engineer</em>, University of Padua</li>
 </ul>
 <h2 id="education">Education</h2>
-<h3 id="doctor-of-philosophy"><span>2013 – 2016</span> ♦ <span>Doctor of Philosophy</span></h3>
+<h3 id="doctor-of-philosophy"><span>Doctor of Philosophy</span><span>2013 – 2016</span></h3>
 <ul>
 <li>Information Engineering, University of Padua</li>
 <li>Thesis: <em>Protein contour modelling and computation for complementarity detection and docking</em>.</li>
 </ul>
-<h3 id="masters-degree"><span>2010 – 2012</span> ♦ <span>Master’s degree</span></h3>
+<h3 id="masters-degree"><span>Master’s degree</span><span>2010 – 2012</span></h3>
 <ul>
 <li>Computer Engineering, University of Padua</li>
 <li>110/110 <em>cum laude</em></li>
 <li>Thesis: <em>DHT-based task allocation in Volunteer Computing</em>.</li>
 </ul>
-<h3 id="bachelors-degree"><span>2007 – 2010</span> ♦ <span>Bachelor’s degree</span></h3>
+<h3 id="bachelors-degree"><span>Bachelor’s degree</span><span>2007 – 2010</span></h3>
 <ul>
 <li>Computer Engineering, University of Padua</li>
 <li>110/110 <em>cum laude</em></li>
@@ -258,10 +449,8 @@
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: center;"><a href="resume.html">resume.html</a></th>
 <th style="text-align: center;"><a href="resume.pdf">resume.pdf</a></th>
 <th style="text-align: center;"><a href="resume.docx">resume.docx</a></th>
-<th style="text-align: center;"><a href="resume.rtf">resume.rtf</a></th>
 </tr>
 </thead>
 <tbody>
