@@ -73,13 +73,14 @@ Open Source
 Talks and Writing
 -----------------
 - *2024* &ensp; Trino Summit 2024: *Optimizing Trino on Kubernetes* ([slides](https://sdaberdaku.github.io/optimizing-trino-on-k8s/)).
-- Articles in *Towards Data Engineering* on Medium:
-    - [Enabling AWS Glue support in Apache Spark 4](https://medium.com/towards-data-engineering/enabling-aws-glue-support-in-apache-spark-4-2c1fca7a7149) (2025)
-    - [Centralized AWS CloudWatch log collection to S3](https://medium.com/towards-data-engineering/centralized-aws-cloudwatch-log-collection-to-s3-7f66a066b48b) (2024)
-    - [Exploring the Machine Learning capabilities of Trino](https://medium.com/towards-data-engineering/exploring-the-machine-learning-capabilities-of-trino-b35a43a2b1d6) (2024)
-    - [Testing Apache Airflow DAGs locally with Testcontainers and LocalStack](https://medium.com/towards-data-engineering/testing-apache-airflow-dags-locally-with-testcontainers-and-localstack-6bca9ff62d61) (2024)
-    - [Building a custom Apache Spark Docker image with AWS Glue Data Catalog support as metastore](https://medium.com/towards-data-engineering/building-a-custom-apache-spark-docker-image-with-aws-glue-data-catalog-support-as-metastore-95ef9a709794) (2024)
-    - [Performing Delta Table operations in PySpark with Spark Connect](https://medium.com/towards-data-engineering/performing-delta-table-operations-in-pyspark-with-spark-connect-3925b08d4766) (2024)
+- Articles on Medium ([all articles](https://medium.com/@sebastiandaberdaku)):
+    - [Taming noisy neighbours in a multi-tenant Trino cluster](https://medium.com/@sebastiandaberdaku/taming-noisy-neighbours-in-a-multi-tenant-trino-cluster-d34b98d42305) (2026)
+    - [Trino on Kubernetes, two years after my Trino Summit talk](https://medium.com/@sebastiandaberdaku/trino-on-kubernetes-two-years-after-my-trino-summit-talk-e8a41db8486e) (2026)
+    - [Running Trino workers on spot instances](https://medium.com/@sebastiandaberdaku/running-trino-workers-on-spot-instances-29ab409ed5ae) (2026)
+    - [Upgrading Trino on Kubernetes with blue/green clusters](https://medium.com/@sebastiandaberdaku/upgrading-trino-on-kubernetes-with-blue-green-clusters-62adf8e15ab1) (2026)
+    - [Blocking partial clears in Airflow 2 and 3](https://medium.com/@sebastiandaberdaku/blocking-partial-clears-in-airflow-2-and-3-e6b54111dd4f) (2026)
+    - [Free TLS for internal services on AWS](https://medium.com/@sebastiandaberdaku/free-tls-for-internal-services-on-aws-34550740ed15) (2026)
+    - [Enabling AWS Glue support in Apache Spark 4](https://medium.com/towards-data-engineering/enabling-aws-glue-support-in-apache-spark-4-2c1fca7a7149) (2025, *Towards Data Engineering*)
 
 Selected Publications
 ---------------------
