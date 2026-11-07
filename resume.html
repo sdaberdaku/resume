@@ -387,7 +387,7 @@ Head of Platform &amp; Data Engineering @ Cardo AI
 <h2 id="open-source">Open Source</h2>
 <ul>
 <li><strong>Trino:</strong> 17 merged PRs to the <a href="https://github.com/trinodb/charts/pulls?q=is%3Apr+author%3Asdaberdaku+is%3Amerged" target="_blank">official Helm charts</a> (KEDA worker autoscaling, graceful worker shutdown, NetworkPolicy, JMX exporter, Trino Gateway) and 3 to <a href="https://github.com/trinodb/trino/pulls?q=is%3Apr+author%3Asdaberdaku+is%3Amerged" target="_blank">Trino</a> (Delta Lake connector, SQL routines).</li>
-<li><strong>Apache Airflow:</strong> AWS STS region support for the <a href="https://github.com/apache/airflow/pull/47495" target="_blank">HashiCorp Vault provider</a>.</li>
+<li><strong>Apache Airflow:</strong> AWS STS region support for the <a href="https://github.com/apache/airflow/pull/47495" target="_blank">HashiCorp Vault provider</a>; templated <code>conn_id</code> and <code>config_kwargs</code> in <a href="https://github.com/apache/airflow/pull/75764" target="_blank"><code>@task.pyspark</code></a>.</li>
 <li><strong>Own projects:</strong> <a href="https://github.com/sdaberdaku/kafka2delta" target="_blank">kafka2delta</a> (Kafka to Delta Lake streaming, on PyPI), <a href="https://github.com/sdaberdaku/nodereaper" target="_blank">nodereaper</a> (removes empty and unhealthy Kubernetes nodes), <a href="https://github.com/sdaberdaku/aws-glue-data-catalog-spark-client" target="_blank">aws-glue-data-catalog-spark-client</a> (AWS Glue Data Catalog as the Spark metastore, Spark 4 included), <a href="https://cran.r-project.org/package=wkNNMI" target="_blank">wkNNMI</a> (R package on CRAN for k-NN imputation).</li>
 </ul>
 <h2 id="talks-and-writing">Talks and Writing</h2>
@@ -395,12 +395,14 @@ Head of Platform &amp; Data Engineering @ Cardo AI
 <li><em>2024</em>   Trino Summit 2024: <em>Optimizing Trino on Kubernetes</em> (<a href="https://sdaberdaku.github.io/optimizing-trino-on-k8s/" target="_blank">slides</a>).</li>
 <li>Articles on Medium (<a href="https://medium.com/@sebastiandaberdaku" target="_blank">all articles</a>):
 <ul>
-<li><a href="https://medium.com/@sebastiandaberdaku/taming-noisy-neighbours-in-a-multi-tenant-trino-cluster-d34b98d42305" target="_blank">Taming noisy neighbours in a multi-tenant Trino cluster</a> (2026)</li>
-<li><a href="https://medium.com/@sebastiandaberdaku/trino-on-kubernetes-two-years-after-my-trino-summit-talk-e8a41db8486e" target="_blank">Trino on Kubernetes, two years after my Trino Summit talk</a> (2026)</li>
-<li><a href="https://medium.com/@sebastiandaberdaku/running-trino-workers-on-spot-instances-29ab409ed5ae" target="_blank">Running Trino workers on spot instances</a> (2026)</li>
-<li><a href="https://medium.com/@sebastiandaberdaku/upgrading-trino-on-kubernetes-with-blue-green-clusters-62adf8e15ab1" target="_blank">Upgrading Trino on Kubernetes with blue/green clusters</a> (2026)</li>
-<li><a href="https://medium.com/@sebastiandaberdaku/blocking-partial-clears-in-airflow-2-and-3-e6b54111dd4f" target="_blank">Blocking partial clears in Airflow 2 and 3</a> (2026)</li>
-<li><a href="https://medium.com/@sebastiandaberdaku/free-tls-for-internal-services-on-aws-34550740ed15" target="_blank">Free TLS for internal services on AWS</a> (2026)</li>
+<li><a href="https://itnext.io/what-ten-months-of-deleting-idle-nodes-taught-us-about-karpenter-df79f445b02d" target="_blank">What ten months of deleting idle nodes taught us about Karpenter</a> (2026, <em>ITNEXT</em>)</li>
+<li><a href="https://medium.com/towards-data-engineering/taming-noisy-neighbours-in-a-multi-tenant-trino-cluster-d34b98d42305" target="_blank">Taming noisy neighbours in a multi-tenant Trino cluster</a> (2026, <em>Towards Data Engineering</em>)</li>
+<li><a href="https://medium.com/towards-data-engineering/trino-on-kubernetes-two-years-after-my-trino-summit-talk-e8a41db8486e" target="_blank">Trino on Kubernetes, two years after my Trino Summit talk</a> (2026, <em>Towards Data Engineering</em>)</li>
+<li><a href="https://itnext.io/running-trino-workers-on-spot-instances-29ab409ed5ae" target="_blank">Running Trino workers on spot instances</a> (2026, <em>ITNEXT</em>)</li>
+<li><a href="https://itnext.io/upgrading-trino-on-kubernetes-with-blue-green-clusters-62adf8e15ab1" target="_blank">Upgrading Trino on Kubernetes with blue/green clusters</a> (2026, <em>ITNEXT</em>)</li>
+<li><a href="https://medium.com/towards-data-engineering/blocking-partial-clears-in-airflow-2-and-3-e6b54111dd4f" target="_blank">Blocking partial clears in Airflow 2 and 3</a> (2026, <em>Towards Data Engineering</em>)</li>
+<li><a href="https://medium.com/towards-data-engineering/a-modern-approach-to-testing-airflow-dags-in-airflow-3-c6912c493396" target="_blank">A modern approach to testing Airflow DAGs in Airflow 3</a> (2026, <em>Towards Data Engineering</em>)</li>
+<li><a href="https://itnext.io/free-tls-for-internal-services-on-aws-34550740ed15" target="_blank">Free TLS for internal services on AWS</a> (2026, <em>ITNEXT</em>)</li>
 <li><a href="https://medium.com/towards-data-engineering/enabling-aws-glue-support-in-apache-spark-4-2c1fca7a7149" target="_blank">Enabling AWS Glue support in Apache Spark 4</a> (2025, <em>Towards Data Engineering</em>)</li>
 </ul></li>
 </ul>
