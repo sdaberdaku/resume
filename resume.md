@@ -67,19 +67,21 @@ Experience
 Open Source
 -----------
 - **Trino:** 17 merged PRs to the [official Helm charts](https://github.com/trinodb/charts/pulls?q=is%3Apr+author%3Asdaberdaku+is%3Amerged) (KEDA worker autoscaling, graceful worker shutdown, NetworkPolicy, JMX exporter, Trino Gateway) and 3 to [Trino](https://github.com/trinodb/trino/pulls?q=is%3Apr+author%3Asdaberdaku+is%3Amerged) (Delta Lake connector, SQL routines).
-- **Apache Airflow:** AWS STS region support for the [HashiCorp Vault provider](https://github.com/apache/airflow/pull/47495).
+- **Apache Airflow:** AWS STS region support for the [HashiCorp Vault provider](https://github.com/apache/airflow/pull/47495); templated `conn_id` and `config_kwargs` in [`@task.pyspark`](https://github.com/apache/airflow/pull/75764).
 - **Own projects:** [kafka2delta](https://github.com/sdaberdaku/kafka2delta) (Kafka to Delta Lake streaming, on PyPI), [nodereaper](https://github.com/sdaberdaku/nodereaper) (removes empty and unhealthy Kubernetes nodes), [aws-glue-data-catalog-spark-client](https://github.com/sdaberdaku/aws-glue-data-catalog-spark-client) (AWS Glue Data Catalog as the Spark metastore, Spark 4 included), [wkNNMI](https://cran.r-project.org/package=wkNNMI) (R package on CRAN for k-NN imputation).
 
 Talks and Writing
 -----------------
 - *2024* &ensp; Trino Summit 2024: *Optimizing Trino on Kubernetes* ([slides](https://sdaberdaku.github.io/optimizing-trino-on-k8s/)).
 - Articles on Medium ([all articles](https://medium.com/@sebastiandaberdaku)):
-    - [Taming noisy neighbours in a multi-tenant Trino cluster](https://medium.com/@sebastiandaberdaku/taming-noisy-neighbours-in-a-multi-tenant-trino-cluster-d34b98d42305) (2026)
-    - [Trino on Kubernetes, two years after my Trino Summit talk](https://medium.com/@sebastiandaberdaku/trino-on-kubernetes-two-years-after-my-trino-summit-talk-e8a41db8486e) (2026)
-    - [Running Trino workers on spot instances](https://medium.com/@sebastiandaberdaku/running-trino-workers-on-spot-instances-29ab409ed5ae) (2026)
-    - [Upgrading Trino on Kubernetes with blue/green clusters](https://medium.com/@sebastiandaberdaku/upgrading-trino-on-kubernetes-with-blue-green-clusters-62adf8e15ab1) (2026)
-    - [Blocking partial clears in Airflow 2 and 3](https://medium.com/@sebastiandaberdaku/blocking-partial-clears-in-airflow-2-and-3-e6b54111dd4f) (2026)
-    - [Free TLS for internal services on AWS](https://medium.com/@sebastiandaberdaku/free-tls-for-internal-services-on-aws-34550740ed15) (2026)
+    - [What ten months of deleting idle nodes taught us about Karpenter](https://itnext.io/what-ten-months-of-deleting-idle-nodes-taught-us-about-karpenter-df79f445b02d) (2026, *ITNEXT*)
+    - [Taming noisy neighbours in a multi-tenant Trino cluster](https://medium.com/towards-data-engineering/taming-noisy-neighbours-in-a-multi-tenant-trino-cluster-d34b98d42305) (2026, *Towards Data Engineering*)
+    - [Trino on Kubernetes, two years after my Trino Summit talk](https://medium.com/towards-data-engineering/trino-on-kubernetes-two-years-after-my-trino-summit-talk-e8a41db8486e) (2026, *Towards Data Engineering*)
+    - [Running Trino workers on spot instances](https://itnext.io/running-trino-workers-on-spot-instances-29ab409ed5ae) (2026, *ITNEXT*)
+    - [Upgrading Trino on Kubernetes with blue/green clusters](https://itnext.io/upgrading-trino-on-kubernetes-with-blue-green-clusters-62adf8e15ab1) (2026, *ITNEXT*)
+    - [Blocking partial clears in Airflow 2 and 3](https://medium.com/towards-data-engineering/blocking-partial-clears-in-airflow-2-and-3-e6b54111dd4f) (2026, *Towards Data Engineering*)
+    - [A modern approach to testing Airflow DAGs in Airflow 3](https://medium.com/towards-data-engineering/a-modern-approach-to-testing-airflow-dags-in-airflow-3-c6912c493396) (2026, *Towards Data Engineering*)
+    - [Free TLS for internal services on AWS](https://itnext.io/free-tls-for-internal-services-on-aws-34550740ed15) (2026, *ITNEXT*)
     - [Enabling AWS Glue support in Apache Spark 4](https://medium.com/towards-data-engineering/enabling-aws-glue-support-in-apache-spark-4-2c1fca7a7149) (2025, *Towards Data Engineering*)
 
 Selected Publications
