@@ -74,6 +74,7 @@ Talks and Writing
 -----------------
 - *2024* &ensp; Trino Summit 2024: *Optimizing Trino on Kubernetes* ([slides](https://sdaberdaku.github.io/optimizing-trino-on-k8s/)).
 - Articles on Medium ([all articles](https://medium.com/@sebastiandaberdaku)):
+    - [AWS Glue for Spark and Delta Lake without the Hive client](https://itnext.io/aws-glue-for-spark-and-delta-lake-without-the-hive-client-61c29e4db39d) (2026, *ITNEXT*)
     - [What ten months of deleting idle nodes taught us about Karpenter](https://itnext.io/what-ten-months-of-deleting-idle-nodes-taught-us-about-karpenter-df79f445b02d) (2026, *ITNEXT*)
     - [Taming noisy neighbours in a multi-tenant Trino cluster](https://medium.com/towards-data-engineering/taming-noisy-neighbours-in-a-multi-tenant-trino-cluster-d34b98d42305) (2026, *Towards Data Engineering*)
     - [Trino on Kubernetes, two years after my Trino Summit talk](https://medium.com/towards-data-engineering/trino-on-kubernetes-two-years-after-my-trino-summit-talk-e8a41db8486e) (2026, *Towards Data Engineering*)
@@ -146,4 +147,4 @@ Other formats
 
 ---
 
-#### October 2026
+#### November 2026
